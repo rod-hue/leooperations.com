@@ -1,308 +1,308 @@
 [
-  {
-    "slug": "sierra-club",
-    "name": "Sierra Club",
-    "file": "assets/logos/sierra-club.png",
-    "w": 154,
-    "h": 240,
-    "source": "resume",
-    "source_url": "https://upload.wikimedia.org/wikipedia/en/c/c6/Sierra_Club_logo.png"
-  },
-  {
-    "slug": "march-on",
-    "name": "March On",
-    "file": "assets/logos/march-on.png",
-    "w": 356,
-    "h": 240,
-    "source": "resume",
-    "source_url": "https://upload.wikimedia.org/wikipedia/en/1/11/March_On_Logo.png"
-  },
-  {
-    "slug": "mike-bloomberg-2020",
-    "name": "Mike Bloomberg 2020",
-    "file": "assets/logos/mike-bloomberg-2020.png",
-    "w": 518,
-    "h": 240,
-    "source": "resume",
-    "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Mike_Bloomberg_2020_presidential_campaign_logo.svg"
-  },
-  {
-    "slug": "blackpac",
-    "name": "BlackPAC",
-    "file": "assets/logos/blackpac.png",
-    "w": 491,
-    "h": 240,
-    "source": "resume",
-    "source_url": "https://blackpac.com/wp-content/uploads/2022/11/WebLogo-BlackCWhite.png"
-  },
-  {
-    "slug": "the-black-institute",
-    "name": "The Black Institute",
-    "file": "assets/logos/the-black-institute.png",
-    "w": 793,
-    "h": 240,
-    "source": "resume",
-    "source_url": "https://images.squarespace-cdn.com/content/v1/68019ac0e13af338fd855244/17b260a2-4826-46b4-a7e1-6c8ceeebefe8/TBIlogoblackfull+%281%29.png"
-  },
-  {
-    "slug": "hilltop-public-solutions",
-    "name": "Hilltop Public Solutions",
-    "file": "assets/logos/hilltop-public-solutions.png",
-    "w": 1528,
-    "h": 240,
-    "source": "resume",
-    "source_url": "https://hilltoppublicsolutions.com/wp-content/uploads/2015/03/hps_logo2.png"
-  },
-  {
-    "slug": "tennessee-state-university",
-    "name": "Tennessee State University",
-    "file": "assets/logos/tennessee-state-university.png",
-    "w": 954,
-    "h": 240,
-    "source": "resume",
-    "source_url": "https://wst-media.sfo2.digitaloceanspaces.com/TSU/wp-content/uploads/2026/03/30195211/tsu_logo_white.svg"
-  },
-  {
-    "slug": "carollo-engineers",
-    "name": "Carollo Engineers",
-    "file": "assets/logos/carollo-engineers.png",
-    "w": 1524,
-    "h": 240,
-    "source": "resume",
-    "source_url": "https://web.archive.org/web/20250118052013/https://carollo.com/wp-content/themes/carollo_2020/images/logo-home.svg"
-  },
-  {
-    "slug": "cogic",
-    "name": "Church of God in Christ",
-    "file": "assets/logos/cogic.png",
-    "w": 243,
-    "h": 240,
-    "source": "resume",
-    "source_url": "https://upload.wikimedia.org/wikipedia/en/7/78/Church_of_God_in_Christ_seal.png"
-  },
-  {
-    "slug": "tennessee-democratic-party",
-    "name": "Tennessee Democratic Party",
-    "file": "assets/logos/tennessee-democratic-party.png",
-    "w": 1106,
-    "h": 240,
-    "source": "resume",
-    "source_url": "https://tndp.org/wp-content/uploads/2025/07/PrimaryLogo_Cream.png"
-  },
-  {
-    "slug": "hillary-for-america",
-    "name": "Hillary for America",
-    "file": "assets/logos/hillary-for-america.png",
-    "w": 280,
-    "h": 240,
-    "source": "resume",
-    "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Hillary_for_America_2016_logo.svg"
-  },
-  {
-    "slug": "revolution-field-strategies",
-    "name": "Revolution Field Strategies",
-    "file": "assets/logos/revolution-field-strategies.png",
-    "w": 383,
-    "h": 240,
-    "source": "resume",
-    "source_url": "https://static.wixstatic.com/media/2177f7_bc66b72b691840748a4a72c64d6b23b4~mv2.png"
-  },
-  {
-    "slug": "all-for-transportation",
-    "name": "All for Transportation",
-    "file": "assets/logos/all-for-transportation.png",
-    "w": 773,
-    "h": 240,
-    "source": "resume",
-    "source_url": "https://web.archive.org/web/20221111132005/https://allfortransportation.com/wp-content/uploads/2022/09/AFT_Main_Working-White.svg"
-  },
-  {
-    "slug": "vote-influencers",
-    "name": "Vote Influencers",
-    "file": "assets/logos/vote-influencers.png",
-    "w": 457,
-    "h": 240,
-    "source": "resume",
-    "source_url": "https://voteinfluencers.com/__l5e/assets-v1/4f825b17-b230-4976-b747-fb52a8034c72/vote-influencers-logo.png"
-  },
-  {
-    "slug": "thei",
-    "name": "Tennessee Higher Education Initiative",
-    "file": "assets/logos/thei.png",
-    "w": 1079,
-    "h": 240,
-    "source": "resume",
-    "source_url": "https://thei.org/wp-content/uploads/2025/04/Acronym_all-colors_white-Background.png"
-  },
-  {
-    "slug": "city-fund",
-    "name": "The City Fund",
-    "file": "assets/logos/city-fund.png",
-    "w": 1017,
-    "h": 240,
-    "source": "old-site",
-    "source_url": "https://leooperations.com/wp-content/uploads/2023/12/CF_Logo_WHITE_knockout-10.png"
-  },
-  {
-    "slug": "nbcsl",
-    "name": "National Black Caucus of State Legislators",
-    "file": "assets/logos/nbcsl.png",
-    "w": 366,
-    "h": 240,
-    "source": "old-site",
-    "source_url": "https://leooperations.com/wp-content/uploads/2023/12/NBCSL.jpg"
-  },
-  {
-    "slug": "seiu",
-    "name": "SEIU",
-    "file": "assets/logos/seiu.png",
-    "w": 314,
-    "h": 240,
-    "source": "old-site",
-    "source_url": "https://leooperations.com/wp-content/uploads/2023/12/SEIU-logo-787EF043E7-seeklogo.com_.png"
-  },
-  {
-    "slug": "memphis-grizzlies",
-    "name": "Memphis Grizzlies",
-    "file": "assets/logos/memphis-grizzlies.png",
-    "w": 194,
-    "h": 240,
-    "source": "old-site",
-    "source_url": "https://leooperations.com/wp-content/uploads/2023/12/Copy-of-Untitled-1.png"
-  },
-  {
-    "slug": "opportunity-nashville",
-    "name": "Opportunity Nashville",
-    "file": "assets/logos/opportunity-nashville.png",
-    "w": 238,
-    "h": 240,
-    "source": "old-site",
-    "source_url": "https://leooperations.com/wp-content/uploads/2023/12/logo-large-website-header.png"
-  },
-  {
-    "slug": "invictus-nashville",
-    "name": "Invictus Nashville Charter School",
-    "file": "assets/logos/invictus-nashville.png",
-    "w": 762,
-    "h": 240,
-    "source": "youtube",
-    "source_url": "https://static.wixstatic.com/media/562b6c_95e6b32b5a564e5a8b630ba5d10a31ef~mv2.png"
-  },
-  {
-    "slug": "music-city-construction-careers",
-    "name": "Music City Construction Careers (MC3)",
-    "file": "assets/logos/music-city-construction-careers.png",
-    "w": 630,
-    "h": 240,
-    "source": "youtube",
-    "source_url": "https://images.squarespace-cdn.com/content/v1/679d41320c427b6d9731313b/1106d7cb-2190-4e8d-8cec-ef9ca28878fa/MC3-fulllogo-dark-01.png"
-  },
-  {
-    "slug": "the-forge-school",
-    "name": "The Forge School",
-    "file": "assets/logos/the-forge-school.png",
-    "w": 363,
-    "h": 240,
-    "source": "youtube",
-    "source_url": "https://images.squarespace-cdn.com/content/v1/66fc47698104ab16ee09e35f/76f00d55-7d18-4a7b-9786-7f78895729e7/Final+Flat+-+White.png"
-  },
-  {
-    "slug": "rocketship-public-schools",
-    "name": "Rocketship Public Schools",
-    "file": "assets/logos/rocketship-public-schools.png",
-    "w": 772,
-    "h": 240,
-    "source": "youtube",
-    "source_url": "https://www.rocketshipschools.org/wp-content/uploads/2017/09/logo.png"
-  },
-  {
-    "slug": "national-bar-association",
-    "name": "National Bar Association",
-    "file": "assets/logos/national-bar-association.png",
-    "w": 784,
-    "h": 240,
-    "source": "youtube",
-    "source_url": "https://nationalbar.org/wp-content/uploads/2026/07/logo_NationalBarAssociation_white_horiz.svg"
-  },
-  {
-    "slug": "nfl-alumni",
-    "name": "NFL Alumni",
-    "file": "assets/logos/nfl-alumni.png",
-    "w": 184,
-    "h": 240,
-    "source": "youtube",
-    "source_url": "https://storage.googleapis.com/nflnflalumni-dev/2023/10/69685ec6-nfla-logo4c-4x3-1.png"
-  },
-  {
-    "slug": "osborn-for-senate",
-    "name": "Dan Osborn for Senate",
-    "file": "assets/logos/osborn-for-senate.png",
-    "w": 639,
-    "h": 240,
-    "source": "youtube",
-    "source_url": "https://images.squarespace-cdn.com/content/v1/680ed99393a4d37d929c3cdd/ad977a37-00a2-4558-9327-23ab87a09ab1/OsbornforSenate_CampaignLogo.png"
-  },
-  {
-    "slug": "tcu",
-    "name": "TCU",
-    "file": "assets/logos/tcu.png",
-    "w": 497,
-    "h": 240,
-    "source": "youtube",
-    "source_url": "https://tcu.edu/_resources/images/tcu-logo-white.svg"
-  },
-  {
-    "slug": "scouting-america",
-    "name": "Scouting America",
-    "file": "assets/logos/scouting-america.png",
-    "w": 324,
-    "h": 240,
-    "source": "youtube",
-    "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Scouting_America_corporate_logo.png"
-  },
-  {
-    "slug": "neosoul-vogue",
-    "name": "NeoSoul Vogue",
-    "file": "assets/logos/neosoul-vogue.png",
-    "w": 370,
-    "h": 240,
-    "source": "youtube",
-    "source_url": "https://neosoulvogue.com/cdn/shop/files/Update_Neosoulvogue.png"
-  },
-  {
-    "slug": "nashville-general-hospital",
-    "name": "Nashville General Hospital",
-    "file": "assets/logos/nashville-general-hospital.png",
-    "w": 1795,
-    "h": 240,
-    "source": "rod",
-    "source_url": "https://nashvillegeneral.org/themes/custom/nghd8/images/logo-ngh-horizontal.svg"
-  },
-  {
-    "slug": "meharry-medical-college",
-    "name": "Meharry Medical College",
-    "file": "assets/logos/meharry-medical-college.png",
-    "w": 999,
-    "h": 240,
-    "source": "rod",
-    "source_url": "https://meharry.edu/wp-content/uploads/2025/03/03_28_10-Official-MMC-Logo-White.svg"
-  },
-  {
-    "slug": "fisk-university",
-    "name": "Fisk University",
-    "file": "assets/logos/fisk-university.png",
-    "w": 673,
-    "h": 240,
-    "source": "rod",
-    "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Fisk_logo.svg"
-  },
-  {
-    "slug": "hard-knocks-strategies",
-    "name": "Hard Knocks Strategies",
-    "file": "assets/logos/hard-knocks-strategies.png",
-    "w": 322,
-    "h": 240,
-    "source": "rod",
-    "source_url": "https://hardknocksllc.com/wp-content/uploads/2019/03/logo.png"
-  }
+ {
+  "slug": "sierra-club",
+  "name": "Sierra Club",
+  "file": "assets/logos/sierra-club.png",
+  "w": 154,
+  "h": 240,
+  "source": "resume",
+  "source_url": "https://upload.wikimedia.org/wikipedia/en/c/c6/Sierra_Club_logo.png"
+ },
+ {
+  "slug": "march-on",
+  "name": "March On",
+  "file": "assets/logos/march-on.png",
+  "w": 356,
+  "h": 240,
+  "source": "resume",
+  "source_url": "https://upload.wikimedia.org/wikipedia/en/1/11/March_On_Logo.png"
+ },
+ {
+  "slug": "mike-bloomberg-2020",
+  "name": "Mike Bloomberg 2020",
+  "file": "assets/logos/mike-bloomberg-2020.png",
+  "w": 518,
+  "h": 240,
+  "source": "resume",
+  "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Mike_Bloomberg_2020_presidential_campaign_logo.svg"
+ },
+ {
+  "slug": "blackpac",
+  "name": "BlackPAC",
+  "file": "assets/logos/blackpac.png",
+  "w": 491,
+  "h": 240,
+  "source": "resume",
+  "source_url": "https://blackpac.com/wp-content/uploads/2022/11/WebLogo-BlackCWhite.png"
+ },
+ {
+  "slug": "the-black-institute",
+  "name": "The Black Institute",
+  "file": "assets/logos/the-black-institute.png",
+  "w": 793,
+  "h": 240,
+  "source": "resume",
+  "source_url": "https://images.squarespace-cdn.com/content/v1/68019ac0e13af338fd855244/17b260a2-4826-46b4-a7e1-6c8ceeebefe8/TBIlogoblackfull+%281%29.png"
+ },
+ {
+  "slug": "hilltop-public-solutions",
+  "name": "Hilltop Public Solutions",
+  "file": "assets/logos/hilltop-public-solutions.png",
+  "w": 1528,
+  "h": 240,
+  "source": "resume",
+  "source_url": "https://hilltoppublicsolutions.com/wp-content/uploads/2015/03/hps_logo2.png"
+ },
+ {
+  "slug": "tennessee-state-university",
+  "name": "Tennessee State University",
+  "file": "assets/logos/tennessee-state-university.png",
+  "w": 954,
+  "h": 240,
+  "source": "resume",
+  "source_url": "https://wst-media.sfo2.digitaloceanspaces.com/TSU/wp-content/uploads/2026/03/30195211/tsu_logo_white.svg"
+ },
+ {
+  "slug": "carollo-engineers",
+  "name": "Carollo Engineers",
+  "file": "assets/logos/carollo-engineers.png",
+  "w": 1524,
+  "h": 240,
+  "source": "resume",
+  "source_url": "https://web.archive.org/web/20250118052013/https://carollo.com/wp-content/themes/carollo_2020/images/logo-home.svg"
+ },
+ {
+  "slug": "cogic",
+  "name": "Church of God in Christ",
+  "file": "assets/logos/cogic.png",
+  "w": 243,
+  "h": 240,
+  "source": "resume",
+  "source_url": "https://upload.wikimedia.org/wikipedia/en/7/78/Church_of_God_in_Christ_seal.png"
+ },
+ {
+  "slug": "tennessee-democratic-party",
+  "name": "Tennessee Democratic Party",
+  "file": "assets/logos/tennessee-democratic-party.png",
+  "w": 1106,
+  "h": 240,
+  "source": "resume",
+  "source_url": "https://tndp.org/wp-content/uploads/2025/07/PrimaryLogo_Cream.png"
+ },
+ {
+  "slug": "hillary-for-america",
+  "name": "Hillary for America",
+  "file": "assets/logos/hillary-for-america.png",
+  "w": 280,
+  "h": 240,
+  "source": "resume",
+  "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Hillary_for_America_2016_logo.svg"
+ },
+ {
+  "slug": "revolution-field-strategies",
+  "name": "Revolution Field Strategies",
+  "file": "assets/logos/revolution-field-strategies.png",
+  "w": 383,
+  "h": 240,
+  "source": "resume",
+  "source_url": "https://static.wixstatic.com/media/2177f7_bc66b72b691840748a4a72c64d6b23b4~mv2.png"
+ },
+ {
+  "slug": "all-for-transportation",
+  "name": "All for Transportation",
+  "file": "assets/logos/all-for-transportation.png",
+  "w": 773,
+  "h": 240,
+  "source": "resume",
+  "source_url": "https://web.archive.org/web/20221111132005/https://allfortransportation.com/wp-content/uploads/2022/09/AFT_Main_Working-White.svg"
+ },
+ {
+  "slug": "vote-influencers",
+  "name": "Vote Influencers",
+  "file": "assets/logos/vote-influencers.png",
+  "w": 457,
+  "h": 240,
+  "source": "resume",
+  "source_url": "https://voteinfluencers.com/__l5e/assets-v1/4f825b17-b230-4976-b747-fb52a8034c72/vote-influencers-logo.png"
+ },
+ {
+  "slug": "thei",
+  "name": "Tennessee Higher Education Initiative",
+  "file": "assets/logos/thei.png",
+  "w": 1079,
+  "h": 240,
+  "source": "resume",
+  "source_url": "https://thei.org/wp-content/uploads/2025/04/Acronym_all-colors_white-Background.png"
+ },
+ {
+  "slug": "city-fund",
+  "name": "The City Fund",
+  "file": "assets/logos/city-fund.png",
+  "w": 1017,
+  "h": 240,
+  "source": "old-site",
+  "source_url": "https://leooperations.com/wp-content/uploads/2023/12/CF_Logo_WHITE_knockout-10.png"
+ },
+ {
+  "slug": "nbcsl",
+  "name": "National Black Caucus of State Legislators",
+  "file": "assets/logos/nbcsl.png",
+  "w": 366,
+  "h": 240,
+  "source": "old-site",
+  "source_url": "https://leooperations.com/wp-content/uploads/2023/12/NBCSL.jpg"
+ },
+ {
+  "slug": "seiu",
+  "name": "SEIU",
+  "file": "assets/logos/seiu.png",
+  "w": 314,
+  "h": 240,
+  "source": "old-site",
+  "source_url": "https://leooperations.com/wp-content/uploads/2023/12/SEIU-logo-787EF043E7-seeklogo.com_.png"
+ },
+ {
+  "slug": "memphis-grizzlies",
+  "name": "Memphis Grizzlies",
+  "file": "assets/logos/memphis-grizzlies.png",
+  "w": 194,
+  "h": 240,
+  "source": "old-site",
+  "source_url": "https://leooperations.com/wp-content/uploads/2023/12/Copy-of-Untitled-1.png"
+ },
+ {
+  "slug": "opportunity-nashville",
+  "name": "Opportunity Nashville",
+  "file": "assets/logos/opportunity-nashville.png",
+  "w": 238,
+  "h": 240,
+  "source": "old-site",
+  "source_url": "https://leooperations.com/wp-content/uploads/2023/12/logo-large-website-header.png"
+ },
+ {
+  "slug": "invictus-nashville",
+  "name": "Invictus Nashville Charter School",
+  "file": "assets/logos/invictus-nashville.png",
+  "w": 762,
+  "h": 240,
+  "source": "youtube",
+  "source_url": "https://static.wixstatic.com/media/562b6c_95e6b32b5a564e5a8b630ba5d10a31ef~mv2.png"
+ },
+ {
+  "slug": "music-city-construction-careers",
+  "name": "Music City Construction Careers (MC3)",
+  "file": "assets/logos/music-city-construction-careers.png",
+  "w": 630,
+  "h": 240,
+  "source": "youtube",
+  "source_url": "https://images.squarespace-cdn.com/content/v1/679d41320c427b6d9731313b/1106d7cb-2190-4e8d-8cec-ef9ca28878fa/MC3-fulllogo-dark-01.png"
+ },
+ {
+  "slug": "the-forge-school",
+  "name": "The Forge School",
+  "file": "assets/logos/the-forge-school.png",
+  "w": 363,
+  "h": 240,
+  "source": "youtube",
+  "source_url": "https://images.squarespace-cdn.com/content/v1/66fc47698104ab16ee09e35f/76f00d55-7d18-4a7b-9786-7f78895729e7/Final+Flat+-+White.png"
+ },
+ {
+  "slug": "rocketship-public-schools",
+  "name": "Rocketship Public Schools",
+  "file": "assets/logos/rocketship-public-schools.png",
+  "w": 772,
+  "h": 240,
+  "source": "youtube",
+  "source_url": "https://www.rocketshipschools.org/wp-content/uploads/2017/09/logo.png"
+ },
+ {
+  "slug": "national-bar-association",
+  "name": "National Bar Association",
+  "file": "assets/logos/national-bar-association.png",
+  "w": 784,
+  "h": 240,
+  "source": "youtube",
+  "source_url": "https://nationalbar.org/wp-content/uploads/2026/07/logo_NationalBarAssociation_white_horiz.svg"
+ },
+ {
+  "slug": "nfl-alumni",
+  "name": "NFL Alumni",
+  "file": "assets/logos/nfl-alumni.png",
+  "w": 184,
+  "h": 240,
+  "source": "youtube",
+  "source_url": "https://storage.googleapis.com/nflnflalumni-dev/2023/10/69685ec6-nfla-logo4c-4x3-1.png"
+ },
+ {
+  "slug": "osborn-for-senate",
+  "name": "Dan Osborn for Senate",
+  "file": "assets/logos/osborn-for-senate.png",
+  "w": 639,
+  "h": 240,
+  "source": "youtube",
+  "source_url": "https://images.squarespace-cdn.com/content/v1/680ed99393a4d37d929c3cdd/ad977a37-00a2-4558-9327-23ab87a09ab1/OsbornforSenate_CampaignLogo.png"
+ },
+ {
+  "slug": "tcu",
+  "name": "TCU",
+  "file": "assets/logos/tcu.png",
+  "w": 497,
+  "h": 240,
+  "source": "youtube",
+  "source_url": "https://tcu.edu/_resources/images/tcu-logo-white.svg"
+ },
+ {
+  "slug": "scouting-america",
+  "name": "Scouting America",
+  "file": "assets/logos/scouting-america.png",
+  "w": 324,
+  "h": 240,
+  "source": "youtube",
+  "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Scouting_America_corporate_logo.png"
+ },
+ {
+  "slug": "neosoul-vogue",
+  "name": "NeoSoul Vogue",
+  "file": "assets/logos/neosoul-vogue.png",
+  "w": 370,
+  "h": 240,
+  "source": "youtube",
+  "source_url": "https://neosoulvogue.com/cdn/shop/files/Update_Neosoulvogue.png"
+ },
+ {
+  "slug": "nashville-general-hospital",
+  "name": "Nashville General Hospital",
+  "file": "assets/logos/nashville-general-hospital.png",
+  "w": 1795,
+  "h": 240,
+  "source": "rod",
+  "source_url": "https://nashvillegeneral.org/themes/custom/nghd8/images/logo-ngh-horizontal.svg"
+ },
+ {
+  "slug": "meharry-medical-college",
+  "name": "Meharry Medical College",
+  "file": "assets/logos/meharry-medical-college.png",
+  "w": 999,
+  "h": 240,
+  "source": "rod",
+  "source_url": "https://meharry.edu/wp-content/uploads/2025/03/03_28_10-Official-MMC-Logo-White.svg"
+ },
+ {
+  "slug": "fisk-university",
+  "name": "Fisk University",
+  "file": "assets/logos/fisk-university.png",
+  "w": 533,
+  "h": 240,
+  "source": "rod",
+  "source_url": "https://www.fisk.edu/wp-content/uploads/2020/10/FISK-COLLEGIATE-SPIRE-V2-WHITE.png"
+ },
+ {
+  "slug": "hard-knocks-strategies",
+  "name": "Hard Knocks Strategies",
+  "file": "assets/logos/hard-knocks-strategies.png",
+  "w": 322,
+  "h": 240,
+  "source": "rod",
+  "source_url": "https://hardknocksllc.com/wp-content/uploads/2019/03/logo.png"
+ }
 ]
