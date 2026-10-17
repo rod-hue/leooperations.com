@@ -295,5 +295,14 @@
     "h": 240,
     "source": "rod",
     "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Fisk_logo.svg"
+  },
+  {
+    "slug": "hard-knocks-strategies",
+    "name": "Hard Knocks Strategies",
+    "file": "assets/logos/hard-knocks-strategies.png",
+    "w": 322,
+    "h": 240,
+    "source": "rod",
+    "source_url": "https://hardknocksllc.com/wp-content/uploads/2019/03/logo.png"
   }
 ]
