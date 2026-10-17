@@ -6,3 +6,7 @@ assets/gen/
 build.py
 content.json
 content_text.json
+assets/reel/reel_src.mp4
+assets/gen4k/
+_home_v2.py
+_audit.js
