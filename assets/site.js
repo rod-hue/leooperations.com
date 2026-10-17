@@ -234,8 +234,8 @@
   if(map){var sp=[].slice.call(map.querySelectorAll('.states path[data-o]')),li=[].slice.call(map.querySelectorAll('.st li')),mc=map.querySelector('.mc'),
       arcs=[].slice.call(map.querySelectorAll('.arc')),cities=[].slice.call(map.querySelectorAll('.city')),N=sp.length;
     arcs.forEach(function(a){var L=a.getTotalLength();a.style.strokeDasharray=L;a.style.strokeDashoffset=L;a.dataset.l=L});
-    function setP(p){var n=Math.round(p*N);sp.forEach(function(s){s.classList.toggle('lit',+s.dataset.o<n)});li.forEach(function(l){l.classList.toggle('lit',+l.dataset.o<n)});mc.textContent=n;
-      var q=Math.max(0,Math.min(1,(p-.15)/.85));arcs.forEach(function(a,i){var k=Math.max(0,Math.min(1,q*arcs.length-i*.55));a.style.strokeDashoffset=a.dataset.l*(1-k);cities[i].style.opacity=k>.9?1:0})}
+    function setP(p){var n=Math.round(Math.min(1,p/.45)*N);sp.forEach(function(s){s.classList.toggle('lit',+s.dataset.o<n)});li.forEach(function(l){l.classList.toggle('lit',+l.dataset.o<n)});mc.textContent=n;
+      var q=Math.max(0,Math.min(1,(p-.08)/.8));arcs.forEach(function(a,i){var k=Math.max(0,Math.min(1,q*arcs.length*1.6-i*1.1));a.style.strokeDashoffset=a.dataset.l*(1-k);cities[i].style.opacity=k>.9?1:0})}
     if(reduce||!G){setP(1)}else{setP(0);
       ScrollTrigger.matchMedia({'(min-width: 861px)':function(){ScrollTrigger.create({trigger:map,start:'top top',end:'+=170%',pin:map.querySelector('.pin'),scrub:.6,onUpdate:function(s){setP(s.progress)}})},
         '(max-width: 860px)':function(){var o={p:0};ScrollTrigger.create({trigger:map,start:'top 60%',once:true,onEnter:function(){G.to(o,{p:1,duration:3.2,ease:'power2.inOut',onUpdate:function(){setP(o.p)}})}})}})}}
