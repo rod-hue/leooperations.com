@@ -251,5 +251,14 @@
   /* design studio: columns drift at different speeds */
   if(G&&!reduce&&matchMedia('(min-width: 861px)').matches)G.utils.toArray('.dcol').forEach(function(c){var sp=+c.dataset.speed||0;G.fromTo(c,{yPercent:-sp},{yPercent:sp,ease:'none',scrollTrigger:{trigger:'.dgrid',start:'top bottom',end:'bottom top',scrub:true}})});
   if(G&&!reduce)G.utils.toArray('.dp').forEach(function(p,i){G.from(p,{y:70,opacity:0,rotate:i%2?1.2:-1.2,duration:1.1,ease:'power3.out',scrollTrigger:{trigger:p,start:'top 92%'}})});
+  /* Start a project: scroll to the CTA, then pulse the circle button */
+  function goStart(){var t=document.getElementById('start');if(!t)return false;if(document.getElementById('loader2')){setTimeout(goStart,300);return true}var c=t.querySelector('.cta-circle');
+    document.documentElement.classList.remove('menu-open');
+    var y=t.getBoundingClientRect().top+scrollY, far=Math.abs(y-scrollY)>1600;
+    if(window.__lenis){if(far)__lenis.scrollTo(y-1100,{immediate:true,force:true});setTimeout(function(){__lenis.scrollTo(t,{offset:0,duration:1.2,force:true,lock:true})},far?60:0)}
+    else{if(far)scrollTo(0,y-1100);setTimeout(function(){t.scrollIntoView({behavior:'smooth'})},60)}
+    if(c)setTimeout(function(){c.classList.remove('ping');void c.offsetWidth;c.classList.add('ping')},1300);return true}
+  document.addEventListener('click',function(e){var a=e.target.closest('a[data-go="start"]');if(!a)return;if(document.getElementById('start')){e.preventDefault();e.stopPropagation();goStart()}},true);
+  if(location.hash==='#start')addEventListener('load',function(){setTimeout(goStart,400)});
   if(window.ScrollTrigger){ScrollTrigger.sort();ScrollTrigger.refresh()}
 })();
