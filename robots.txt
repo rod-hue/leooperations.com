@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://leooperations.com/sitemap.xml
