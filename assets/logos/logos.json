@@ -268,5 +268,32 @@
     "h": 240,
     "source": "youtube",
     "source_url": "https://neosoulvogue.com/cdn/shop/files/Update_Neosoulvogue.png"
+  },
+  {
+    "slug": "nashville-general-hospital",
+    "name": "Nashville General Hospital",
+    "file": "assets/logos/nashville-general-hospital.png",
+    "w": 1795,
+    "h": 240,
+    "source": "rod",
+    "source_url": "https://nashvillegeneral.org/themes/custom/nghd8/images/logo-ngh-horizontal.svg"
+  },
+  {
+    "slug": "meharry-medical-college",
+    "name": "Meharry Medical College",
+    "file": "assets/logos/meharry-medical-college.png",
+    "w": 999,
+    "h": 240,
+    "source": "rod",
+    "source_url": "https://meharry.edu/wp-content/uploads/2025/03/03_28_10-Official-MMC-Logo-White.svg"
+  },
+  {
+    "slug": "fisk-university",
+    "name": "Fisk University",
+    "file": "assets/logos/fisk-university.png",
+    "w": 673,
+    "h": 240,
+    "source": "rod",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Fisk_logo.svg"
   }
 ]
