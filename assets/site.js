@@ -248,5 +248,8 @@
     if(reduce||!G){turn(0)}else{turn(0);
       ScrollTrigger.create({trigger:'.mag2',start:'top top',end:'+='+(T*55)+'%',pin:'.mag2 .pin',scrub:.7,onUpdate:function(s){turn(s.progress)}});
       lv.forEach(function(l){l.querySelectorAll('img').forEach(function(im){im.loading='eager'})})}}
+  /* design studio: columns drift at different speeds */
+  if(G&&!reduce&&matchMedia('(min-width: 861px)').matches)G.utils.toArray('.dcol').forEach(function(c){var sp=+c.dataset.speed||0;G.fromTo(c,{yPercent:-sp},{yPercent:sp,ease:'none',scrollTrigger:{trigger:'.dgrid',start:'top bottom',end:'bottom top',scrub:true}})});
+  if(G&&!reduce)G.utils.toArray('.dp').forEach(function(p,i){G.from(p,{y:70,opacity:0,rotate:i%2?1.2:-1.2,duration:1.1,ease:'power3.out',scrollTrigger:{trigger:p,start:'top 92%'}})});
   if(window.ScrollTrigger){ScrollTrigger.sort();ScrollTrigger.refresh()}
 })();

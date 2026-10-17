@@ -88,6 +88,7 @@ body::after{content:"";position:fixed;inset:-50%;pointer-events:none;z-index:90;
 .split-line>span{display:inline-block}
 section{position:relative}
 .sec{padding:clamp(90px,14vh,170px) 0}
+.sec.wrap{padding-left:var(--pad);padding-right:var(--pad)}
 .sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:clamp(40px,6vh,70px)}
 .sec-head p{color:var(--dim);max-width:46ch}
 
@@ -534,3 +535,16 @@ img.blurfill{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;f
 @media (max-width:860px){.mag2 .mfacts{gap:22px;margin:16px 0 0}.mag2 .mfacts b{font-size:26px}.mag2 .hint{display:none}.mag2 .lead{font-size:16px}.mag2 .pin{min-height:100svh;align-content:center;gap:22px;padding:80px var(--pad) 30px}}
 
 .map2 .states path.lit.home{fill:#9fe3ff;filter:drop-shadow(0 0 14px rgba(79,208,255,.9))}
+
+/* design studio v3 */
+.dgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2.4vw,36px);align-items:start}
+.dcol{display:flex;flex-direction:column;gap:clamp(28px,3.4vw,52px);will-change:transform}
+.dcol:nth-child(2){margin-top:clamp(40px,8vw,140px)}
+.dp a{display:block;border-radius:14px;overflow:hidden;background:#0b1020;box-shadow:0 30px 70px rgba(0,0,0,.45);transform:translateZ(0)}
+.dp img{display:block;width:100%;height:auto;transition:transform .9s cubic-bezier(.2,.8,.2,1),filter .6s}
+.dp a:hover img{transform:scale(1.04)}
+.dp figcaption{display:flex;flex-direction:column;gap:4px;margin-top:14px;padding-left:2px}
+.dp figcaption b{font-family:var(--display);font-weight:700;font-size:clamp(15px,1.15vw,18px);letter-spacing:-.01em}
+.dp figcaption span{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+@media (max-width:860px){.dgrid{grid-template-columns:1fr 1fr;gap:16px}.dcol{gap:26px}.dcol:nth-child(2){margin-top:60px}.dcol:nth-child(3){grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:0}.dcol:nth-child(3) .dp:last-child{grid-column:1/-1;width:70%;justify-self:center}}
+@media (max-width:860px){.dp figcaption b{font-size:14px}.dp figcaption span{font-size:9.5px;letter-spacing:.08em}.dp figcaption{margin-top:10px}}
