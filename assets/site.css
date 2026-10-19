@@ -356,7 +356,7 @@ img.blurfill{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;f
 .badge2 text{font:500 9.4px var(--mono);letter-spacing:.3em;text-transform:uppercase;fill:#cfe2ff}
 .badge2 img{position:absolute;inset:28%;width:44%;filter:drop-shadow(0 0 14px rgba(47,139,255,.8))}
 @keyframes spin{to{transform:rotate(360deg)}}
-@media (max-width:760px){.hero2 .media::after{background:linear-gradient(0deg,var(--bg) 14%,rgba(2,4,10,.25) 55%,rgba(2,4,10,.55) 100%)}.hero2 .name{bottom:140px;right:var(--pad)}.hero2 .name .l>span{font-size:11.4vw}.hero2 .name .l2>span{font-size:12vw}.hero2 .foot{flex-direction:column;align-items:flex-start}.badge2{top:100px;width:84px}.hero2 .topline span:last-child{display:none}}
+@media (max-width:760px){.hero2 .media video,.hero2 .media img{object-position:94% 40%}.hero2 .media::after{background:linear-gradient(0deg,var(--bg) 14%,rgba(2,4,10,.25) 55%,rgba(2,4,10,.55) 100%)}.hero2 .name{bottom:140px;right:var(--pad)}.hero2 .name .l>span{font-size:11.4vw}.hero2 .name .l2>span{font-size:12vw}.hero2 .foot{flex-direction:column;align-items:flex-start}.badge2{top:100px;width:84px}.hero2 .topline span:last-child{display:none}}
 
 .manifesto2{padding:clamp(130px,22vh,240px) var(--pad);max-width:1440px;margin:0 auto}
 .manifesto2 p{font-family:"Instrument Serif",serif;font-size:clamp(36px,5.6vw,92px);line-height:1.04;letter-spacing:-.015em}
