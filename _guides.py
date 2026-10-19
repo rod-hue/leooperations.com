@@ -14,10 +14,10 @@ def _inline(s):
         if u.startswith('/'):
             return f'<a href="{{pre}}{u.lstrip("/")}">{t}</a>'
         return f'<a href="{E(u)}" target="_blank" rel="noopener">{t}</a>'
-    return _re.sub(r'\[([^\]]+)\]\(([^)\s]+)\)', lk, s)
+    return _re.sub(r'\[([^\]]+)\]\(((?:[^()\s]|\([^()\s]*\))+)\)', lk, s)
 
 def _plain(s):
-    s = _re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', s)
+    s = _re.sub(r'\[([^\]]+)\]\(((?:[^()\s]|\([^()\s]*\))+)\)', r'\1', s)
     return s.replace('**', '')
 
 def _md(body):
@@ -73,9 +73,11 @@ def _md(body):
             out.append('<ul>' + ''.join(f'<li>{_inline(x)}</li>' for x in items) + '</ul>'); continue
         if _re.match(r'^\s*\d+[.)] ', ln):
             items = []
+            n0 = int(_re.match(r'^\s*(\d+)', ln).group(1))
             while i < len(lines) and _re.match(r'^\s*\d+[.)] ', lines[i]):
                 items.append(_re.sub(r'^\s*\d+[.)] ', '', lines[i])); i += 1
-            out.append('<ol>' + ''.join(f'<li>{_inline(x)}</li>' for x in items) + '</ol>'); continue
+            st = f' start="{n0}" style="counter-reset:gstep {n0 - 1}"' if n0 > 1 else ''
+            out.append(f'<ol{st}>' + ''.join(f'<li>{_inline(x)}</li>' for x in items) + '</ol>'); continue
         para = [ln.strip()]; i += 1
         while i < len(lines) and lines[i].strip() and not _re.match(r'^(#|\s*- |\s*\d+[.)] |\s*\|)', lines[i]):
             para.append(lines[i].strip()); i += 1
