@@ -117,7 +117,8 @@ def guide_page(slug):
     html, faq, toc = _md(g['body'])
     url = SITE + '/guides/' + slug + '/'
     mins = max(1, round(g['words'] / 230))
-    author = {"@type": "Person", "name": "Rodriquez Wright II", "alternateName": "Rod Wright", "url": SITE + "/team/rodriquez-wright-ii/", "jobTitle": "Founder and CEO, Leo Operations"}
+    author = {"@type": "Person", "@id": "https://rodriquezwright.com/#person", "name": "Rodriquez Wright II", "alternateName": ["Rod Wright", "Rodriquez Wright"], "url": "https://rodriquezwright.com/", "jobTitle": "Founder and CEO, Leo Operations",
+              "sameAs": [SITE + "/team/rodriquez-wright-ii/", "https://rodriquezwright.com/guides/", "https://www.linkedin.com/in/rodriquez-wright-ii-62523049/", "https://www.washingtondcmagazine.com/author/rod/", "https://muckrack.com/rodriquez-wright-ii"]}
     ld = [{"@context": "https://schema.org", "@type": "Article", "headline": g['h1'][:110], "description": g['description'], "author": author,
            "publisher": {"@id": SITE + "/#organization"}, "datePublished": GUIDE_DATE, "dateModified": GUIDE_DATE,
            "mainEntityOfPage": url, "articleSection": g.get('category', ''), "keywords": g.get('keywords', ''), "wordCount": g['words'],
@@ -139,7 +140,7 @@ def guide_page(slug):
         return f'''<article class="guide">
 <header class="ghero wrap"><nav class="crumbs mono"><a href="{pre}">Home</a> / <a href="{pre}guides/">Guides</a> / <span>{E(g.get("category",""))}</span></nav>
 <h1 class="h-lg">{E(g["h1"])}</h1><p class="lead">{E(g.get("dek",""))}</p>
-<p class="byline mono">By <a href="{pre}team/rodriquez-wright-ii/">Rodriquez Wright II</a>, Leo Operations &middot; Updated October 2026 &middot; {mins} min read</p></header>
+<p class="byline mono">By <a href="https://rodriquezwright.com/" rel="author">Rodriquez Wright II</a>, <a href="{pre}team/rodriquez-wright-ii/">Founder, Leo Operations</a> &middot; Updated October 2026 &middot; {mins} min read</p></header>
 <section class="sec wrap" style="padding-top:10px"><div class="two-col"><div class="prose gprose">{html.replace("{pre}", pre)}</div>
 <aside class="sticky-card">{_guide_cta(g.get("category"), pre)}<div class="gtoc"><span class="eyebrow mono">In this guide</span><ol>{tocl}</ol></div></aside></div></section>
 <section class="sec wrap"><span class="eyebrow mono">Keep reading</span><div class="grel">{relc}</div></section></article>
