@@ -4,7 +4,7 @@ import glob as _glob, re as _re, datetime as _dt
 
 GUIDE_DIR = '_src/guides/md'
 GUIDE_DATE = '2026-10-19'
-GUIDE_CATS = ['Campaigns', 'Field', 'Media', 'Weddings']
+GUIDE_CATS = ['Campaigns', 'Field', 'Media', 'Organizing', 'Weddings']
 
 def _inline(s):
     s = E(s)
@@ -153,7 +153,7 @@ def guides_hub():
             cards = ''.join(f'<a class="gcard" href="{pre}guides/{k}/"><b>{E(v["h1"])}</b><span>{E(v.get("dek",""))}</span></a>' for k, v in items)
             secs += f'<section class="sec wrap"><span class="eyebrow mono">{E(c)}</span><div class="grel">{cards}</div></section>'
         return f'''<header class="ghero wrap"><nav class="crumbs mono"><a href="{pre}">Home</a> / <span>Guides</span></nav><h1 class="h-lg">Guides from Leo Operations</h1>
-<p class="lead">Straight answers on running for office, field programs, political media and wedding photography and film, from the team that does the work.</p></header>{secs}{bigcta(pre)}'''
+<p class="lead">Straight answers on running for office, field programs, political media, organizing events and wedding photography and film, from the team that does the work.</p></header>{secs}{bigcta(pre)}'''
     ld = [{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Leo Operations Guides", "url": SITE + "/guides/",
            "hasPart": [{"@type": "Article", "headline": v['h1'], "url": SITE + "/guides/" + k + "/"} for k, v in GUIDES.items()]}]
     page('guides/', 'Campaign, Field, Media and Wedding Guides | Leo Operations',
