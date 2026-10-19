@@ -553,3 +553,24 @@ img.blurfill{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;f
 h1 .serif,h2 .serif,.cta2 h2 .serif{padding:0 .1em .18em .02em;margin-right:-.06em}
 .cta-circle.ping{animation:ctaping 1.6s ease-out 2}
 @keyframes ctaping{0%{box-shadow:0 0 0 0 rgba(79,208,255,.65)}100%{box-shadow:0 0 0 46px rgba(79,208,255,0)}}
+/* guides */
+.ghero{padding-top:140px;max-width:980px}
+.ghero h1{margin:16px 0 18px}
+.crumbs{font-size:12px;letter-spacing:.08em;color:var(--silver)}.crumbs a{color:var(--cyan)}
+.byline{margin-top:18px;font-size:12px;letter-spacing:.06em;color:var(--silver)}.byline a{color:#fff}
+.gprose{min-width:0;overflow-wrap:anywhere}.guide .two-col>*{min-width:0}.gtable th,.gtable td{overflow-wrap:normal;word-break:normal}
+.gprose a{color:var(--cyan);text-decoration:underline;text-underline-offset:3px}
+.gprose ol{margin:10px 0 24px 22px;color:var(--silver);font-size:18px}.gprose ol li{padding:6px 0 6px 6px}
+.gprose li{font-size:18px}
+.gprose strong{color:#fff}
+.gtable{overflow-x:auto;margin:10px 0 28px;border:1px solid var(--line);border-radius:14px}
+.gtable table{width:100%;border-collapse:collapse;font-size:15px;min-width:520px}
+.gtable th{text-align:left;font-weight:600;color:#fff;background:rgba(255,255,255,.04);padding:12px 14px;border-bottom:1px solid var(--line)}
+.gtable td{padding:12px 14px;border-bottom:1px solid var(--line);color:var(--silver);vertical-align:top}
+.gtable tr:last-child td{border-bottom:0}
+.gprose details{border-bottom:1px solid var(--line);padding:16px 0}.gprose summary{cursor:pointer;font-weight:600;color:#fff;font-size:18px}.gprose details p{margin:12px 0 0}
+.gtoc{margin-top:26px;padding-top:20px;border-top:1px solid var(--line)}.gtoc ol{margin:12px 0 0 18px;font-size:14px;color:var(--silver)}.gtoc li{padding:4px 0}.gtoc a{color:var(--silver)}.gtoc a:hover{color:#fff}
+.grel{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;margin-top:20px}
+.gcard{display:flex;flex-direction:column;gap:10px;padding:24px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.02);transition:border-color .2s,transform .2s}
+.gcard:hover{border-color:var(--cyan);transform:translateY(-3px)}.gcard b{font-family:var(--display);font-size:20px;line-height:1.2}.gcard span:not(.eyebrow){color:var(--silver);font-size:15px}
+@media (max-width:760px){.ghero{padding-top:110px}.gprose p,.gprose li,.gprose ol{font-size:17px}.gtoc{display:none}}
