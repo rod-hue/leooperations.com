@@ -6,7 +6,7 @@ TERMS = [
  ('Overview', ['These terms apply to every service from Leo Operations, LLC: campaign and field programs, media production, photography and videography, design, websites, social media, education services and weddings.',
    'Your signed agreement or proposal sets the scope, schedule and fees for your project. Where your signed agreement differs from these terms, your signed agreement controls. By engaging Leo Operations, clients agree to the terms below.']),
  ('1. Engagement and commitment', ['Work begins once your agreement is signed and the initial payment is received.',
-   'Monthly content partnerships carry a three-month minimum. After the initial term, they continue month to month unless otherwise agreed.',
+   'Content partnerships run for the term in your agreement: one, three or six months. After the initial term, they continue month to month unless otherwise agreed.',
    'Leo Operations may decline projects that do not fit its service model.']),
  ('2. Payment terms', ['Services are billed as stated in your agreement. Monthly partnerships are billed monthly, in advance.',
    'Payment secures and holds your date or slot. Late payments may pause services or require rescheduling.',
@@ -42,7 +42,7 @@ TERMS = [
    'Raw files and unused content are not included unless otherwise agreed in writing.']),
  ('15. Limitation of liability', ['Leo Operations is not liable for the performance of outside platforms, such as social media algorithms or ad delivery, or for indirect outcomes such as sales, conversions, enrollment or votes.',
    'Services are provided on the basis of professional expertise and execution.']),
- ('16. Termination', ['Either party may end a monthly partnership after the initial three-month term with written notice.',
+ ('16. Termination', ['Either party may end a content partnership after its initial term with written notice.',
    'No refunds are issued for work already completed or in progress.']),
  ('Questions', ['Email Leo Operations with any question about these terms.']),
 ]
