@@ -116,7 +116,8 @@ def education_page():
                  + film('e-invictus', 'Invictus Nashville &middot; student voices', 'In their own words.', 'Invictus students tell families why they love their school and why they should come. A recruitment film in the voices families trust most.')
                  + film('e-rocketship', 'Rocketship Public Schools &middot; charter renewal', 'Rally the community.', 'School leaders ask families to write letters of support and turn out for the school board vote on their charter renewal.')
                  + film('e-forge', 'The Forge School &middot; new school launch', 'Introduce a new high school.', 'The founder of The Forge School introduces a first-of-its-kind architecture, construction and engineering school to future families.')
-                 + film('e-scouts', 'Central NC Council &middot; Scouting America', 'Youth programs that last a lifetime.', 'Scout leaders in North Carolina on why mentorship and the outdoors shape young people for life.', 'escout')
+                 + film('e-mca', 'Music City Academy &middot; community voices', 'Build support before day one.', 'Parents and local business owners on why they are backing Music City Academy, a new sports-focused school founded by Kevin Dyson.')
+                 + film('e-scouts', 'Central NC Council &middot; Scouting America', 'Youth programs that last a lifetime.', 'Scout leaders in North Carolina on why mentorship and the outdoors shape young people for life.')
                  + '</div>')
         shorts = '<div class="eshorts">' + short(1, 'Why hands-on learning wins') + short(2, 'A Montessori experience families notice') + short(3, 'Educator, parent and Montessori approved') + '</div>'
         wall = ''.join(f'<figure data-r="{i%3}">{img("assets/education/"+f+".jpg", alt, pre)}<figcaption class="mono">{c}</figcaption></figure>' for i, (f, alt, c) in enumerate(E_WALL))
