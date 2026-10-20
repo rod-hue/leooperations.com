@@ -110,7 +110,7 @@ def education_page():
         def short(n, title):
             return (f'<div class="wfilm" data-r="{n%3}"><video preload="none" playsinline poster="{P}e-short{n}.jpg" data-hd="{P}e-short{n}.mp4" data-sd="{P}e-short{n}.mp4"></video>'
                     f'<div class="ov"><span class="pb" aria-hidden="true"></span><span class="mono" style="color:var(--gold)">Invictus Nashville &middot; social</span><b>{title}</b></div></div>')
-        reel = film('e-reel', 'Highlight reel &middot; 60 seconds &middot; sound on', 'Schools families choose.', 'Classrooms, first days and the students at the center of it all, from films we produced for charter schools.', 'wreel')
+        reel = film('e-reel', 'Highlight reel &middot; 2.5 minutes &middot; sound on', 'Schools families choose.', 'Founders, families, teachers and students from the charter schools we help open, grow and fill, in their own words.', 'wreel')
         films = (f'<div class="wfilms" style="margin-top:clamp(14px,2vw,26px)">'
                  + film('e-journey', 'Invictus Nashville &middot; school launch', 'Opening a charter school.', 'Founder Dr. Brenda Jones on the journey to opening Invictus Nashville Charter School, from the first plan to the first day of class.')
                  + film('e-invictus', 'Invictus Nashville &middot; student voices', 'In their own words.', 'Invictus students tell families why they love their school and why they should come. A recruitment film in the voices families trust most.')
@@ -164,6 +164,6 @@ def education_page():
       {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in E_FAQ]},
       {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": SITE + "/"}, {"@type": "ListItem", "position": 2, "name": "Education", "item": url}]},
       {"@context": "https://schema.org", "@type": "VideoObject", "name": "Leo Operations Education Highlight Reel", "description": "One-minute highlight reel of school and training programs filmed by Leo Operations: classrooms, career training, homecoming and student voices.",
-       "thumbnailUrl": SITE + "/assets/education/e-reel.jpg", "contentUrl": SITE + "/assets/education/e-reel-hd.mp4", "uploadDate": "2026-10-20T12:00:00-05:00", "duration": "PT59S"},
+       "thumbnailUrl": SITE + "/assets/education/e-reel.jpg", "contentUrl": SITE + "/assets/education/e-reel-hd.mp4", "uploadDate": "2026-10-20T12:00:00-05:00", "duration": "PT2M37S"},
     ]
     page('education/', E_TITLE, E_DESC, body, og='assets/education/e-hero.jpg', extra_ld=ld)
