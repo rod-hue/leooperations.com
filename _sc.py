@@ -1,25 +1,26 @@
 # ---------- SOUTH CAROLINA (/south-carolina/) ----------
 # exec'd by build.py after _weddings.py (reuses W_CSS/W_JS, recolored). Media in assets/sc from Rod's Dec 2025 South Carolina shoot
 # (Drive: Brandon Brown For US Senate, plus Elected Headshots / Elected Videos). Facts only: no prices, no outcomes we can't source.
-# The official in the Orangeburg holiday greeting is not named in her video, so she stays unnamed until Rod confirms.
+# Annette Dees Grevious: spelling from her own lower third (Orangeburg City Council, District 4, sworn in Oct 2023).
 SC_WALL = [  # (file, alt, caption)
  ("hs-govan-1", "South Carolina State Rep. Jerry N. Govan Jr. in a navy jacket and SCDES cap", "Rep. Jerry N. Govan Jr."),
  ("hs-smart-1", "Fairfax Town Councilwoman Phyllis Smart smiling in an orange cardigan", "Councilwoman Phyllis Smart"),
  ("bb-1", "Brandon Brown in a navy suit and striped tie", "Brandon Brown"),
- ("hs-ob-2", "Orangeburg official in a magenta blazer against a brick wall", "Orangeburg"),
- ("bb-trio", "Brandon Brown with Councilwoman Phyllis Smart and an Orangeburg official", "Orangeburg County"),
+ ("hs-ob-2", "Orangeburg City Councilwoman Annette Dees Grevious in a magenta blazer", "Councilwoman Annette Dees Grevious"),
+ ("bb-trio", "Brandon Brown with Councilwomen Phyllis Smart and Annette Dees Grevious", "Smart, Brown and Dees Grevious"),
  ("hs-govan-3", "Rep. Jerry Govan under a palmetto tree", "Rep. Jerry N. Govan Jr."),
  ("bb-reese", "Brandon Brown with former State Sen. Glenn Reese at his Spartanburg Krispy Kreme", "Sen. Glenn Reese"),
  ("hs-smart-2", "Councilwoman Phyllis Smart against a brick wall", "Councilwoman Phyllis Smart"),
  ("bb-5", "Brandon Brown with arms crossed beside an American flag", "Brandon Brown"),
  ("hs-govan-2", "Rep. Jerry Govan standing against a brick wall", "Rep. Jerry N. Govan Jr."),
- ("hs-ob-1", "Orangeburg official smiling in a magenta blazer", "Orangeburg"),
+ ("hs-ob-1", "Councilwoman Annette Dees Grevious smiling against a brick wall", "Councilwoman Annette Dees Grevious"),
  ("bb-2", "Brandon Brown smiling in a navy suit", "Brandon Brown"),
 ]
 SC_OFFICIALS = [
  ('Rep. Jerry N. Govan Jr.', 'South Carolina House, District 93', 'Headshots, a re-election film for House District 93 and an endorsement film.'),
  ('Glenn Reese', 'Former State Senator, District 11', 'An endorsement film shot at the Spartanburg Krispy Kreme his family has run since 1969.'),
- ('Phyllis Smart', 'Fairfax Town Council', 'Headshots and a holiday thank-you to the voters of Fairfax.'),
+ ('Annette Dees Grevious', 'Orangeburg City Council, District 4', 'Headshots, an endorsement film on Orangeburg infrastructure and a holiday greeting to the city.'),
+ ('Phyllis Smart', 'Fairfax Town Council', 'Headshots, an endorsement film and a holiday thank-you to the voters of Fairfax.'),
  ('Bishop Hayes T. Ganey Jr.', 'Faith Group for Action', 'A vertical endorsement interview for voters in Orangeburg County.'),
  ('Brandon Brown', 'Candidate, U.S. Senate, 2026', 'Digital, website, portraits, endorsement films and issue videos.'),
 ]
@@ -39,7 +40,7 @@ SC_MENU = ['Presidential primary field', 'Endorsement films', 'Constituent video
            'Canvassing', 'Phone banking', 'Relational organizing', 'Event production', 'Drone', 'Advance and rally coverage', 'Surrogate content']
 SC_FAQ = [
  ('Why does South Carolina matter in 2028?', 'South Carolina holds the first Democratic presidential primary of the 2028 cycle on January 22, 2028, under the calendar the Democratic National Committee approved on August 15, 2026. It is the first chance for candidates to show they can win Black voters and working families in the South.'),
- ('Has Leo Operations worked in South Carolina?', 'Yes. We ran digital and built the website for Brandon Brown’s 2026 U.S. Senate campaign, and we filmed and photographed South Carolina legislators, local officials and faith leaders, including Rep. Jerry N. Govan Jr., former State Sen. Glenn Reese, Fairfax Councilwoman Phyllis Smart and Bishop Hayes T. Ganey Jr.'),
+ ('Has Leo Operations worked in South Carolina?', 'Yes. We ran digital and built the website for Brandon Brown’s 2026 U.S. Senate campaign, and we filmed and photographed South Carolina legislators, local officials and faith leaders, including Rep. Jerry N. Govan Jr., former State Sen. Glenn Reese, Orangeburg City Councilwoman Annette Dees Grevious, Fairfax Councilwoman Phyllis Smart and Bishop Hayes T. Ganey Jr.'),
  ('Do you have presidential campaign experience?', 'Yes. Founder Rodriquez Wright II was Tennessee state organizing director for Mike Bloomberg’s 2020 presidential campaign. Leo Operations has since worked for more than 40 campaigns, officials and causes, with organizing and ballot work in 25 states and more than 650,000 doors knocked.'),
  ('Do you work with elected officials who are not on the ballot?', 'Yes. We produce headshots, constituent outreach videos, holiday messages and social content for legislators, council members and other officeholders year round.'),
  ('Can you film endorsements for a presidential campaign?', 'Yes. We plan, shoot and edit endorsement films with local leaders in the places voters know them, then cut them for social, email and digital ads with captions and campaign branding.'),
@@ -79,8 +80,10 @@ def sc_page():
         endorse = ('<div class="wfilms" style="margin-top:clamp(14px,2vw,26px)">'
                    + film('sc-govan', 'Endorsement &middot; Rep. Jerry N. Govan Jr.', 'It takes a lot of us.', 'Rep. Govan asks for the $5 and $10 grassroots gifts that keep big money from running the race.')
                    + film('sc-reese', 'Endorsement &middot; former State Sen. Glenn Reese', 'He is the real deal.', 'Glenn Reese, who served Spartanburg in the State Senate from 1991 to 2021, at his family&rsquo;s Krispy Kreme.')
+                   + film('sc-grevious', 'Endorsement &middot; Orangeburg City Council, District 4', 'We need Brandon Brown in Orangeburg.', 'Councilwoman Annette Dees Grevious on aging infrastructure, stormwater drainage and protecting Edisto Gardens and the Edisto River.')
+                   + film('sc-smart-endorse', 'Endorsement &middot; Fairfax Town Council', 'Stop talking about it. Be about it.', 'Councilwoman Phyllis Smart of Fairfax, in Allendale County, on making change happen in South Carolina.')
                    + film('sc-smart', 'Constituent outreach &middot; Fairfax Town Council', 'Thank you, Fairfax.', 'Councilwoman Phyllis Smart thanks the voters who elected her and wishes the town a happy holiday season.')
-                   + film('sc-orangeburg', 'Constituent outreach &middot; Orangeburg', 'Happy holidays, Orangeburg.', 'A holiday greeting to the city and county of Orangeburg, cut short for social.')
+                   + film('sc-orangeburg', 'Constituent outreach &middot; Orangeburg City Council', 'Happy holidays, Orangeburg.', 'Councilwoman Annette Dees Grevious sends a holiday greeting to the city and county of Orangeburg, cut short for social.')
                    + '</div>')
         verts = ('<div class="scv">'
                  + film('sc-ganey', 'Faith Group for Action &middot; vertical', 'Bishop Hayes T. Ganey Jr.', 'A faith leader asks Orangeburg County to register and vote.', '')
@@ -106,7 +109,7 @@ def sc_page():
 <section class="sec wrap" id="photos"><div class="sec-head"><div><span class="eyebrow mono">05 / Headshots</span><h2 class="h-lg" style="margin-top:14px">{split("Portraits for|<span class=serif>public servants.</span>")}</h2></div><p>Professional headshots and campaign portraits shot on location, in front of the schools, offices and palmettos of the communities these leaders serve.</p></div><div class="wwall">{wall}</div></section>
 <section class="sec wrap" id="brandon-brown"><span class="eyebrow mono">06 / Case study</span><h2 class="h-lg" style="margin:14px 0 34px">{split("Brandon Brown|<span class=serif>for U.S. Senate.</span>")}</h2>
 <div class="scbb"><figure data-r="0"><a href="https://brandonpbrown.com/" target="_blank" rel="noopener">{img("assets/sc/bb-site.jpg", "Homepage of brandonpbrown.com, the Brandon Brown for U.S. Senate website built by Leo Operations", pre)}</a><figcaption>brandonpbrown.com, built by Leo Operations</figcaption></figure>
-<div data-r="1"><p class="q">A grassroots Senate campaign needs a site that raises money and <em>a feed that makes people care.</em></p><ul><li>Built brandonpbrown.com: donate, volunteer, meet-and-greet and voter information</li><li>Ran the campaign&rsquo;s digital program</li><li>Filmed endorsement videos with Rep. Jerry Govan, former Sen. Glenn Reese and Bishop Hayes T. Ganey Jr.</li><li>Shot campaign portraits and vertical issue videos across the state</li></ul>
+<div data-r="1"><p class="q">A grassroots Senate campaign needs a site that raises money and <em>a feed that makes people care.</em></p><ul><li>Built brandonpbrown.com: donate, volunteer, meet-and-greet and voter information</li><li>Ran the campaign&rsquo;s digital program</li><li>Filmed endorsement videos with Rep. Jerry Govan, former Sen. Glenn Reese, Councilwomen Annette Dees Grevious and Phyllis Smart, and Bishop Hayes T. Ganey Jr.</li><li>Shot campaign portraits and vertical issue videos across the state</li></ul>
 <p><a class="btn ghost" href="https://brandonpbrown.com/" target="_blank" rel="noopener">Visit the site <span class="arr">&rarr;</span></a></p></div></div></section>
 <section class="sec wrap"><span class="eyebrow mono">07 / What we build</span><h2 class="h-lg" style="margin:14px 0 34px">{split("Organize. Film.|<span class=serif>Reach.</span>")}</h2><div class="wget">{get}</div><p style="color:var(--dim);margin-top:26px;max-width:72ch">Founder Rodriquez Wright II was Tennessee state organizing director for Mike Bloomberg&rsquo;s 2020 presidential campaign. Since then Leo Operations has worked for more than 40 campaigns, officials and causes, with organizing and ballot work in 25 states and more than 650,000 doors knocked.</p></section>
 <section class="sec wrap"><div class="sec-head"><div><span class="eyebrow mono">08 / Every service</span><h2 class="h-lg" style="margin-top:14px">{split("One team for|<span class=serif>the first primary.</span>")}</h2></div><p>Field, film, photo and digital from one firm, so every endorsement, door and ad tells the same story.</p></div><div class="wmom">{menu}</div></section>
@@ -118,6 +121,8 @@ def sc_page():
     vids = [('sc-govan-hd93', 'Rep. Jerry N. Govan Jr. for House District 93', 'Re-election film for South Carolina State Rep. Jerry N. Govan Jr., House District 93.', 'PT1M35S'),
             ('sc-govan', 'Rep. Jerry Govan endorses Brandon Brown', 'Endorsement film with South Carolina State Rep. Jerry N. Govan Jr.', 'PT48S'),
             ('sc-reese', 'Former State Sen. Glenn Reese endorses Brandon Brown', 'Endorsement film with former South Carolina State Sen. Glenn Reese in Spartanburg.', 'PT31S'),
+            ('sc-grevious', 'Councilwoman Annette Dees Grevious endorses Brandon Brown', 'Endorsement film with Orangeburg City Councilwoman Annette Dees Grevious, District 4.', 'PT41S'),
+            ('sc-smart-endorse', 'Councilwoman Phyllis Smart endorses Brandon Brown', 'Endorsement film with Fairfax Town Councilwoman Phyllis Smart.', 'PT27S'),
             ('sc-smart', 'Councilwoman Phyllis Smart holiday message', 'Holiday thank-you from Fairfax Town Councilwoman Phyllis Smart.', 'PT15S'),
             ('sc-ganey', 'Bishop Hayes T. Ganey Jr. endorses Brandon Brown', 'Vertical endorsement interview with Bishop Hayes T. Ganey Jr. of Faith Group for Action.', 'PT1M22S'),
             ('sc-bb-musc', 'Brandon Brown at MUSC Orangeburg', 'Brandon Brown on rural hospitals at MUSC Health Orangeburg.', 'PT47S')]
