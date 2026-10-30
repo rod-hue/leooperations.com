@@ -4,7 +4,7 @@ import glob as _glob, re as _re, datetime as _dt
 
 GUIDE_DIR = '_src/guides/md'
 GUIDE_DATE = '2026-10-19'
-GUIDE_CATS = ['Campaigns', 'Field', 'Media', 'Organizing', 'Weddings']
+GUIDE_CATS = ['Campaigns', 'Field', 'Media', 'Organizing', 'Business', 'Churches', 'Weddings']
 
 def _inline(s):
     s = E(s)
@@ -108,6 +108,14 @@ def _guide_cta(cat, pre):
         return (f'<h3>Planning a wedding?</h3><p>Send your date, venue and guest count. We will tell you what coverage your day actually needs.</p>'
                 f'{mail("rod","leooperations.com","Check our availability <span class=\"arr\">&rarr;</span>","btn primary","Wedding%20inquiry%20from%20leooperations.com")}'
                 f'<p style="margin-top:18px"><a href="{pre}weddings/" style="color:var(--cyan)">See our wedding photo and film work</a></p>')
+    if cat == 'Churches':
+        return (f'<h3>Growing your church?</h3><p>Tell us about your church, your ministries and what you need. We will tell you what will make the biggest difference.</p>'
+                f'{mail("rod","leooperations.com","Talk with our team <span class=\"arr\">&rarr;</span>","btn primary","Church%20inquiry%20from%20leooperations.com")}'
+                f'<p style="margin-top:18px"><a href="{pre}churches/" style="color:var(--cyan)">See our church photo, film and web work</a></p>')
+    if cat == 'Business':
+        return (f'<h3>Planning a video or shoot?</h3><p>Tell us what you need, where you would film and your timeline. We reply within one business day with a plan.</p>'
+                f'{mail("rod","leooperations.com","Get a quote <span class=\"arr\">&rarr;</span>","btn primary","Production%20inquiry%20from%20leooperations.com%20guides")}'
+                f'<p style="margin-top:18px"><a href="{pre}video-production-company/" style="color:var(--cyan)">See our video production work</a></p>')
     return (f'<h3>Planning a program?</h3><p>Tell us the race, the timeline and the budget. We will tell you honestly what it takes to win it.</p>'
             f'{mail("rod","leooperations.com","Talk to Leo Operations <span class=\"arr\">&rarr;</span>","btn primary","Inquiry%20from%20leooperations.com%20guides")}'
             f'<p style="margin-top:18px"><a href="{pre}clients/" style="color:var(--cyan)">See who we have worked with</a></p>')
