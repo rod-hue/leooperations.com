@@ -577,3 +577,5 @@ h1 .serif,h2 .serif,.cta2 h2 .serif{padding:0 .1em .18em .02em;margin-right:-.06
 .gprose ol{list-style:none;counter-reset:gstep;margin:10px 0 24px}
 .gprose ol li{counter-increment:gstep;padding:12px 0 12px 44px}
 .gprose ol li::before{content:counter(gstep);left:0;top:12px;width:28px;height:28px;border-radius:50%;background:rgba(84,160,255,.14);box-shadow:none;border:1px solid rgba(84,160,255,.45);color:#cfe3ff;font:600 13px/26px var(--mono,monospace);text-align:center}
+
+.hero-inner{padding-top:104px}.split.three{grid-template-columns:repeat(3,1fr)}.wsteps.four{grid-template-columns:repeat(4,1fr)}@media (max-width:980px){.wsteps.four{grid-template-columns:1fr 1fr}}@media (max-width:760px){.split.three,.wsteps.four{grid-template-columns:1fr}.split.three .panel{min-height:0;gap:26px}}
