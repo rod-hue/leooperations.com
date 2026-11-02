@@ -313,5 +313,14 @@
   "h": 240,
   "source": "rod",
   "source_url": "client-supplied logo, Party to the Polls GOTV reel, Oct 2026"
+ },
+ {
+  "slug": "twsra",
+  "name": "Tennessee Wine & Spirits Retailers Association",
+  "file": "assets/logos/twsra.png",
+  "w": 591,
+  "h": 240,
+  "source": "client",
+  "source_url": "https://twsra.com"
  }
 ]
