@@ -304,5 +304,14 @@
   "h": 240,
   "source": "rod",
   "source_url": "https://hardknocksllc.com/wp-content/uploads/2019/03/logo.png"
+ },
+ {
+  "slug": "aclu-of-florida",
+  "name": "ACLU of Florida",
+  "file": "assets/logos/aclu-of-florida.png",
+  "w": 438,
+  "h": 240,
+  "source": "rod",
+  "source_url": "client-supplied logo, Party to the Polls GOTV reel, Oct 2026"
  }
 ]
