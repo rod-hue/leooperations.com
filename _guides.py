@@ -21,9 +21,9 @@ def _plain(s):
     return s.replace('**', '')
 
 def _md(body):
-    """Return (html, faq[(q,a)], toc[(id,h)]) for the limited markdown the writers use."""
+    """Return (html, faq[(q,a)], toc[(id,h)], imgs[(src,alt)]) for the limited markdown the writers use."""
     lines = body.strip('\n').split('\n')
-    out, faq, toc = [], [], []
+    out, faq, toc, imgs = [], [], [], []
     i, in_faq, cur_q, cur_a = 0, False, None, []
     def flush_q():
         nonlocal cur_q, cur_a
@@ -56,6 +56,18 @@ def _md(body):
                 i = j; continue
             out.append(f'<h3>{_inline(h)}</h3>')
             i += 1; continue
+        mi = _re.match(r'^!\[([^\]]*)\]\((\S+?)(?:\s+"([^"]*)")?\)\s*$', ln.strip())
+        if mi:
+            alt, src, cap = mi.group(1), mi.group(2), mi.group(3) or ''
+            imgs.append((src, alt))
+            sz = ''
+            try:
+                from PIL import Image as _PI
+                w, h = _PI.open(src.lstrip('/')).size; sz = f' width="{w}" height="{h}"'
+            except Exception: pass
+            lazy = '' if len(imgs) == 1 else ' loading="lazy"'
+            out.append(f'<figure class="gfig"><img src="{{pre}}{src.lstrip("/")}" alt="{E(alt)}"{sz}{lazy} decoding="async">' + (f'<figcaption>{_inline(cap)}</figcaption>' if cap else '') + '</figure>')
+            i += 1; continue
         if ln.lstrip().startswith('|'):
             rows = []
             while i < len(lines) and lines[i].lstrip().startswith('|'):
@@ -83,7 +95,7 @@ def _md(body):
             para.append(lines[i].strip()); i += 1
         out.append(f'<p>{_inline(" ".join(para))}</p>')
     flush_q()
-    return '\n'.join(out), faq, toc
+    return '\n'.join(out), faq, toc, imgs
 
 def _load_guides():
     G = {}
@@ -120,17 +132,36 @@ def _guide_cta(cat, pre):
             f'{mail("rod","leooperations.com","Talk to Leo Operations <span class=\"arr\">&rarr;</span>","btn primary","Inquiry%20from%20leooperations.com%20guides")}'
             f'<p style="margin-top:18px"><a href="{pre}clients/" style="color:var(--cyan)">See who we have worked with</a></p>')
 
+_BIZ = ['nba-memphis-grizzlies', 'tennessee-higher-education-initiative', 'the-dj-aone', 'national-black-caucus-of-state-legislators', 'planned-parenthood-of-tennessee-and-north-mississippi', 'march-on-usa', 'seiu-virginia']
+def _work_links(slug, cat):
+    # Case studies relevant to a guide's category, rotated by guide so every case study is linked from some guide.
+    pf = [k for k, v in C.items() if v['type'] == 'cpt_portfolio']
+    if cat == 'Weddings': return []
+    if cat == 'Churches': pool = [k for k in pf if 'maynard' in k]
+    elif cat == 'Business': pool = [k for k in _BIZ if k in pf]
+    else: pool = [k for k in pf if k not in ('nba-memphis-grizzlies', 'the-dj-aone', 'tennessee-higher-education-initiative')]
+    if len(pool) <= 3: return pool
+    peers = sorted(k for k, v in GUIDES.items() if v.get('category') == cat) or [slug]
+    off = (peers.index(slug) if slug in peers else 0) * 3
+    return [pool[(off + j) % len(pool)] for j in range(3)]
+
+def _pf_title(k):
+    return (CASE_TITLE.get(k) or PF_TITLE.get(k) or C[k]['title']).replace(' – ', ': ')
+
 def guide_page(slug):
     g = GUIDES[slug]
-    html, faq, toc = _md(g['body'])
+    html, faq, toc, imgs = _md(g['body'])
+    upd = g.get('updated', GUIDE_DATE)
+    upd_h = _dt.date.fromisoformat(upd).strftime('%B %Y').replace(' 0', ' ')
+    hero_img = [SITE + '/' + s.lstrip('/') for s, _ in imgs]
     url = SITE + '/guides/' + slug + '/'
     mins = max(1, round(g['words'] / 230))
     author = {"@type": "Person", "@id": "https://rodriquezwright.com/#person", "name": "Rodriquez Wright II", "alternateName": ["Rod Wright", "Rodriquez Wright"], "url": "https://rodriquezwright.com/", "jobTitle": "Founder and CEO, Leo Operations",
               "sameAs": [SITE + "/team/rodriquez-wright-ii/", "https://rodriquezwright.com/guides/", "https://www.linkedin.com/in/rodriquez-wright-ii-62523049/", "https://www.washingtondcmagazine.com/author/rod/", "https://muckrack.com/rodriquez-wright-ii"]}
     ld = [{"@context": "https://schema.org", "@type": "Article", "headline": g['h1'][:110], "description": g['description'], "author": author,
-           "publisher": {"@id": SITE + "/#organization"}, "datePublished": GUIDE_DATE, "dateModified": GUIDE_DATE,
+           "publisher": {"@id": SITE + "/#organization"}, "datePublished": g.get('published', GUIDE_DATE), "dateModified": upd,
            "mainEntityOfPage": url, "articleSection": g.get('category', ''), "keywords": g.get('keywords', ''), "wordCount": g['words'],
-           "image": SHARE + ('/assets/weddings/w-og.jpg' if g.get('category') == 'Weddings' else '/assets/img/og.jpg')},
+           "image": hero_img or SHARE + ('/assets/weddings/w-og.jpg' if g.get('category') == 'Weddings' else '/assets/img/og.jpg')},
           {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
               {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE + "/"},
               {"@type": "ListItem", "position": 2, "name": "Guides", "item": SITE + "/guides/"},
@@ -144,14 +175,16 @@ def guide_page(slug):
     tocl = ''.join(f'<li><a href="#{i}">{E(h)}</a></li>' for i, h in toc)
     og = 'assets/weddings/w-og.jpg' if g.get('category') == 'Weddings' else 'assets/img/og.jpg'
     def body(pre):
+        work = _work_links(slug, g.get('category'))
+        workc = ('<section class="sec wrap" style="padding-top:0"><span class="eyebrow mono">From our work</span><div class="grel">' + ''.join(f'<a class="gcard" href="{pre}portfolio/{k}/"><span class="eyebrow mono">Case study</span><b>{E(_pf_title(k))}</b></a>' for k in work) + '</div></section>') if work else ''
         relc = ''.join(f'<a class="gcard" href="{pre}guides/{r}/"><span class="eyebrow mono">{E(GUIDES[r].get("category",""))}</span><b>{E(GUIDES[r]["h1"])}</b><span>{E(GUIDES[r].get("dek",""))}</span></a>' for r in rel)
         return f'''<article class="guide">
 <header class="ghero wrap"><nav class="crumbs mono"><a href="{pre}">Home</a> / <a href="{pre}guides/">Guides</a> / <span>{E(g.get("category",""))}</span></nav>
 <h1 class="h-lg">{E(g["h1"])}</h1><p class="lead">{E(g.get("dek",""))}</p>
-<p class="byline mono">By <a href="https://rodriquezwright.com/" rel="author">Rodriquez Wright II</a>, <a href="{pre}team/rodriquez-wright-ii/">Founder, Leo Operations</a> &middot; Updated October 2026 &middot; {mins} min read</p></header>
+<p class="byline mono">By <a href="https://rodriquezwright.com/" rel="author">Rodriquez Wright II</a>, <a href="{pre}team/rodriquez-wright-ii/">Founder, Leo Operations</a> &middot; Updated {upd_h} &middot; {mins} min read</p></header>
 <section class="sec wrap" style="padding-top:10px"><div class="two-col"><div class="prose gprose">{html.replace("{pre}", pre)}</div>
 <aside class="sticky-card">{_guide_cta(g.get("category"), pre)}<div class="gtoc"><span class="eyebrow mono">In this guide</span><ol>{tocl}</ol></div></aside></div></section>
-<section class="sec wrap"><span class="eyebrow mono">Keep reading</span><div class="grel">{relc}</div></section></article>
+<section class="sec wrap"><span class="eyebrow mono">Keep reading</span><div class="grel">{relc}</div></section>{workc}</article>
 {bigcta(pre)}'''
     page('guides/' + slug + '/', g['title'] + ' | Leo Operations', g['description'], body, og=og, extra_ld=ld)
 
