@@ -123,7 +123,7 @@ def funnel_page(slug):
 </main>
 <footer><span>&copy; 2026 Leo Operations, LLC. Nashville, Tennessee.</span><span><a href="{pre}privacy-policy/">Privacy Policy</a></span></footer>
 <script>document.querySelectorAll('[data-subj]').forEach(function(a){{a.href='mailto:'+['rod','leooperations.com'].join('@')+'?subject='+a.dataset.subj}})</script>
-</body></html>'''
+{CF_BEACON}</body></html>'''
     os.makedirs(os.path.join(OUT, slug), exist_ok=True)
     open(os.path.join(OUT, slug, 'index.html'), 'w').write(doc)
     PAGES.append(path)
