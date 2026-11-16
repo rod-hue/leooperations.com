@@ -15,7 +15,7 @@ E_WALL = [  # (file, alt, caption)  kids and students first; two MC3 frames only
  ("hs-10", "High school student testing equipment during a career exploration day", "High school career day"),
  ("invictus-grad-27", "Invictus student smiling during the recognition ceremony", "Invictus Nashville"),
  ("fisk-jubilee-9", "Fisk Jubilee Singers portrait on the grand staircase", "Fisk Jubilee Singers"),
- ("mca-14", "Music City Academy student with a school leader", "Music City Academy"),
+ ("mca-14", "Music City Academy founder Kevin Dyson at a community event", "Music City Academy"),
  ("in-27", "Parent and student at an enrollment night", "Enrollment night"),
  ("fd-36", "Students lining up in their classroom", "First day of school"),
  ("mg-36", "Career program graduates holding their certificates", "Music City Construction Careers"),
@@ -153,7 +153,7 @@ def education_page():
 <div class="marq wmarq" aria-hidden="true"><div class="t">{marq}{marq}</div></div>
 <section class="wman"><span class="eyebrow mono" style="margin-bottom:30px">01 / Why Leo</span><p>Families choose a school based on what they see, what they hear and <em>who they trust.</em> We build all three: a recruitment plan that runs all year, organizers who talk with families face to face, and photo and film that show your school at its best.</p></section>
 <section class="sec wrap" id="results"><span class="eyebrow mono">In the news / Results</span><h2 class="h-lg" style="margin:14px 0 34px">{split("Our work|<span class=serif>yields results.</span>")}</h2>
-<div class="epress" data-r="0"><figure>{img("assets/education/mca-14.jpg", "Former Tennessee Titans receiver Kevin Dyson, founder of Music City Academy, with a student", pre)}<figcaption>Founder Kevin Dyson with a future Music City Academy student. Photo by Leo Operations.</figcaption></figure>
+<div class="epress" data-r="0"><figure>{img("assets/education/mca-14.jpg", "Former Tennessee Titans receiver Kevin Dyson, founder of Music City Academy", pre)}</figure>
 <div class="pc"><div class="src"><b>The Tennessean</b><span>Oct. 9, 2026 &middot; Education</span></div>
 <blockquote>TN green lights charter school founded by former Tennessee Titan</blockquote>
 <p class="sum">The Tennessee Public Charter School Commission unanimously approved Music City Academy, the sports-focused public charter high school founded by former Titans receiver Kevin Dyson, overturning Metro Nashville&rsquo;s earlier denial. The school is set to open in August 2027.</p>
