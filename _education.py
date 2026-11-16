@@ -4,7 +4,6 @@
 E_WALL = [  # (file, alt, caption)  kids and students first; two MC3 frames only
  ("in-6", "Families packed into an Invictus Nashville enrollment night", "Invictus Nashville"),
  ("fd-7", "Student working with Montessori materials on the first day of school", "First day of school"),
- ("mca-11", "Music City Academy families and students at a parent meeting", "Music City Academy"),
  ("fisk-jubilee-3", "The Fisk Jubilee Singers in their blue gowns", "Fisk Jubilee Singers"),
  ("hs-17", "High school student learning pipefitting during a career exploration day", "High school career day"),
  ("invictus-grad-0", "Invictus Nashville student recognition ceremony", "Invictus Nashville"),
@@ -93,10 +92,10 @@ E_CSS = W_CSS.replace('.wed', '.edu').replace('#e8cf9e', '#4fd0ff').replace('#c7
 .ejl dt{font-family:var(--display);font-size:18px;margin-bottom:6px}.ejl dd{color:var(--silver);margin:0}
 .efun{display:flex;flex-wrap:wrap;gap:10px;counter-reset:fn}.efun span{font-family:var(--mono);font-size:13px;letter-spacing:.04em;padding:12px 18px;border-radius:999px;border:1px solid rgba(79,208,255,.28)}
 .efun span::before{counter-increment:fn;content:counter(fn,decimal-leading-zero) "  ";color:var(--gold)}
-.epress{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:0;border-radius:26px;overflow:hidden;border:1px solid rgba(79,208,255,.22);background:var(--bg2)}
-.epress figure{margin:0;position:relative;min-height:100%}.epress figure img{width:100%;height:100%;object-fit:cover;object-position:50% 22%;display:block}
+.epress{display:grid;grid-template-columns:1fr;gap:0;border-radius:26px;overflow:hidden;border:1px solid rgba(79,208,255,.22);background:var(--bg2)}
+.epress figure{margin:0;position:relative;aspect-ratio:2/1}.epress figure img{width:100%;height:100%;object-fit:cover;object-position:50% 40%;display:block}
 .epress figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 22px 18px;background:linear-gradient(transparent,rgba(3,16,30,.92));font-size:13px;color:var(--silver)}
-.epress .pc{padding:clamp(26px,4vw,60px);display:flex;flex-direction:column;gap:22px}
+.epress .pc{padding:clamp(26px,4vw,60px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:clamp(28px,4vw,64px);row-gap:22px;align-content:start}.epress .pc>.src,.epress .pc>blockquote{grid-column:1/-1}.epress .pc>.sum{grid-column:1}.epress .pc>.stats{grid-column:1;align-self:start}.epress .pc>.role{grid-column:2;grid-row:3/5}.epress .pc>.acts{grid-column:1/-1}
 .epress .src{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.epress .src b{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:clamp(22px,2vw,28px);letter-spacing:.01em}
 .epress .src span{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim)}
 .epress blockquote{margin:0;padding-left:22px;border-left:3px solid var(--gold);font-family:"Instrument Serif",Georgia,serif;font-size:clamp(28px,3.2vw,48px);line-height:1.05;letter-spacing:-.01em}
@@ -106,7 +105,7 @@ E_CSS = W_CSS.replace('.wed', '.edu').replace('#e8cf9e', '#4fd0ff').replace('#c7
 .epress .role{padding:18px 20px;border-radius:16px;background:rgba(79,208,255,.06);border:1px solid rgba(79,208,255,.18);color:var(--silver);margin:0}.epress .role b{color:#fff}
 .epress .role .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.epress .role .tags span{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:7px 12px;border-radius:999px;border:1px solid rgba(79,208,255,.3);color:#dff6ff}
 .epress .acts{display:flex;flex-wrap:wrap;gap:12px}
-@media (max-width:900px){.epress{grid-template-columns:1fr}.epress figure{aspect-ratio:4/5;max-height:620px}.epress .stats{grid-template-columns:1fr 1fr 1fr}}
+@media (max-width:900px){.epress .pc{display:flex;flex-direction:column}.epress .pc>.stats{align-self:stretch}.epress figure{aspect-ratio:3/2}.epress .stats{grid-template-columns:1fr 1fr 1fr}}
 @media (max-width:520px){.epress .stats{grid-template-columns:1fr}}
 .edu .wsteps{grid-template-columns:repeat(5,1fr)}
 .epart{display:flex;flex-wrap:wrap;gap:10px 14px}.epart span{font-family:var(--display);font-weight:600;font-size:clamp(16px,1.5vw,22px);padding:12px 22px;border-radius:999px;background:rgba(79,208,255,.06);border:1px solid rgba(79,208,255,.22)}
@@ -154,7 +153,7 @@ def education_page():
 <div class="marq wmarq" aria-hidden="true"><div class="t">{marq}{marq}</div></div>
 <section class="wman"><span class="eyebrow mono" style="margin-bottom:30px">01 / Why Leo</span><p>Families choose a school based on what they see, what they hear and <em>who they trust.</em> We build all three: a recruitment plan that runs all year, organizers who talk with families face to face, and photo and film that show your school at its best.</p></section>
 <section class="sec wrap" id="results"><span class="eyebrow mono">In the news / Results</span><h2 class="h-lg" style="margin:14px 0 34px">{split("Our work|<span class=serif>yields results.</span>")}</h2>
-<div class="epress" data-r="0"><figure>{img("assets/education/mca-14.jpg", "Former Tennessee Titans receiver Kevin Dyson, founder of Music City Academy", pre)}</figure>
+<div class="epress" data-r="0"><figure>{img("assets/education/mca-11.jpg", "Music City Academy founder and former Tennessee Titans receiver Kevin Dyson with families and supporters at a community meeting", pre)}</figure>
 <div class="pc"><div class="src"><b>The Tennessean</b><span>Oct. 9, 2026 &middot; Education</span></div>
 <blockquote>TN green lights charter school founded by former Tennessee Titan</blockquote>
 <p class="sum">The Tennessee Public Charter School Commission unanimously approved Music City Academy, the sports-focused public charter high school founded by former Titans receiver Kevin Dyson, overturning Metro Nashville&rsquo;s earlier denial. The school is set to open in August 2027.</p>
