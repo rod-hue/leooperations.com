@@ -22,6 +22,9 @@ MCC_FACTS = [
  ('Signage rule', 'Nothing taped or fastened to walls; anything attached to the building goes through MCC Rigging', 'https://nashvillemcc.com/assets/3049/mcc_planning_guide.pdf'),
 ]
 
+# Music City Center public calendar, 2027 (scraped Nov 17 2026 from https://nashvillemcc.com/calendar; private/internal meetings left out)
+MCC_2027 = [["2027-01-07","2027-01-10","Antiques & Garden Show of Nashville",""],["2027-01-20","2027-01-23","Safari Club International Annual Convention","https://convention.safariclub.org/"],["2027-02-01","2027-02-04","2027 Cattle Industry Convention & NCBA Trade Show","https://convention.ncba.org/"],["2027-02-06","","Father Ryan Legacy Gala",""],["2027-02-09","2027-02-10","Southeast Pool & Spa Show","https://southeastshow.com/attend/"],["2027-02-09","2027-02-10","TNHC 2027","https://thda.org/news/thda-announces-2027-tennessee-housing-conference/"],["2027-02-14","2027-02-17","Dassault Systemes 2027 3DEXPERIENCE World","https://www.3dexperienceworld.com/"],["2027-02-25","","Equal Opportunity Day Luncheon 2027",""],["2027-02-25","","The Joseph School Luminary Award Luncheon 2027",""],["2027-03-04","2027-03-06","Hearth, Patio & Barbecue Association","https://www.hpba.org"],["2027-03-07","","The Nashville Chapter of Jack and Jill of America, Inc. 2027 Biennial Beautillion",""],["2027-03-14","2027-03-17","ViVE Conference","https://www.viveevent.com/"],["2027-03-22","2027-03-25","American College of Healthcare Executives",""],["2027-03-30","2027-03-31","Gadget Repair Expo 7.0","https://gadgetrepairexpo.com/exhibitors"],["2027-04-02","2027-04-03","Fetch 2027","https://www.dvm360events.com/event/fetch-nashville-veterinary-conference-2027/"],["2027-04-04","2027-04-06","NPGA Southeastern Convention & International Propane Expo","https://www.npga.org/news-resources/npga-expo/"],["2027-04-12","2027-04-15","ReMA Convention & Expo","https://www.rema2027.org/"],["2027-04-17","","Moves and Grooves Gala 2027","https://movesandgrooves.org/"],["2027-04-18","2027-04-20","American Retirement Assn - NAPA 401K Summit","https://www.usaretirement.org"],["2027-04-20","2027-04-21","Insurance Innovators Summit 2027","https://insurance-innovators.com/events/usa/"],["2027-04-21","","YWCA Spring Luncheon 2027",""],["2027-04-21","2027-04-22","2027 Nashville Security Summit","https://groupnine.us/nashville-2026-security-summit/"],["2027-04-22","2027-04-23","Saint Jude Rock 'n' Roll Nashville",""],["2027-05-03","2027-05-05","AISTech",""],["2027-05-09","2027-05-11","The Waterways Journal, Inc. - Inland Marine Expo",""],["2027-05-11","2027-05-13","NACTO Designing Cities 2027","https://designingcities.org/2027"],["2027-06-07","2027-06-09","Nashville Healthcare Leadership Summit 2027",""],["2027-06-17","2027-06-19","SIIM 2027 Annual Meeting","https://siim.org/event/siim27-annual-meeting-informaticstech-expo/"],["2027-06-21","2027-06-23","Sports, Inc. 2027 Team Dealers Show","https://www.sportsinc.us/about-sports-inc"],["2027-06-21","2027-06-23","SubSummit 2027","https://annual.subsummit.com/"],["2027-06-23","2027-06-25","DBC Pri-Med","https://www.pri-med.com/cme-conferences/regional-conference-nashville"],["2027-06-27","2027-06-29","BOMA International Annual Conference & Expo",""],["2027-07-15","2027-07-17","The Bitcoin Conference",""],["2027-07-28","2027-07-29","2027 Nashville Build Expo","https://buildexpousa.com/nashville-build-expo/"],["2027-08-10","2027-08-13","2027 THCA/TNCAL Convention & Trade Show",""],["2027-08-22","2027-08-24","WVC Nashville","https://www.viticusgroup.org/wvc-nashville"],["2027-09-01","2027-09-03","NATDA Trailer Show",""],["2027-09-08","2027-09-09","Infosec Conference",""],["2027-09-08","2027-09-09","Be Brilliant In The Basics Leadership Summit 2027","https://www.bebrilliantinthebasics.com/retailcertification"],["2027-10-05","2027-10-07","Shoptalk Fall 2027","https://fall.shoptalk.com"],["2027-10-15","2027-10-17","Nashville Home Show",""],["2027-10-17","2027-10-20","Mortgage Bankers Association 2027 Annual Convention","https://www.mba.org"],["2027-10-20","2027-10-22","Customer Contact Week","https://www.customercontactweek.com/ccw-nashville/"],["2027-10-27","2027-10-29","American Society of Human Genetics","https://www.ashg.org"],["2027-11-02","2027-11-04","2027 Content Marketing World & The Market Research Event",""],["2027-11-06","","GNAA Awards Gala",""],["2027-11-08","2027-11-10","BETT US Fall 2027","https://usa.bettshow.com/"],["2027-11-09","2027-11-10","World Demolition Summit 2027",""],["2027-11-11","2027-11-15","American College of Allergy, Asthma & Immunology 2027 Annual Scientific Meeting",""]]
+
 EV_FILMS = [('twsra', 'big'), ('tsu', ''), ('aone', ''), ('soul', ''), ('privy', ''), ('mc3', 'wide'), ('jetcars', ''), ('sierra', ''), ('bane', ''), ('aclu', '')]
 EV_DESIGN = [('d-homecoming-cover', 'Homecoming 2025 cover', 'Tennessee State University Alumni Relations'),
              ('c-5th-cover', 'Anniversary program cover', 'Cathedral of Praise'),
@@ -42,13 +45,16 @@ EVENTS = {
  'music-city-center-photographer': dict(
   vid='v2-media', eyebrow='Music City Center photographer & videographer', place=True, proof='films', cluster='mcc',
   h='Music City Center|photographer &amp; videographer. <span class=grad>One crew, every hall.</span>',
-  title='Music City Center Photographer & Videographer | Leo Operations',
-  desc='Photography, video, highlight reels, headshot booths, livestream, signage and printed programs for events at Music City Center in Nashville. One local crew. Call (773) 573-2135.',
+  title='Music City Center Photographer & Videographer | Booking 2026-2027',
+  desc='Now booking 2027: photography, video, highlight reels, headshot booths, livestream, signage and printed programs for events at Music City Center in Nashville. Call (773) 573-2135.',
   lead='Leo Operations is a Nashville photo, video and design studio built for big rooms. We cover conventions, conferences, trade shows, galas and award dinners at Music City Center: the photos, the recap film, the same-day social clips, the headshot lounge, the livestream, and the signage and programs your attendees hold in their hands.',
   sections=[
    ('Everything your event needs, from one team', [
     'Most events at Music City Center hire four or five vendors to tell one story: a photographer, a video company, a designer, a print shop and someone to run headshots. Every handoff costs time, and the event comes out looking like five different brands. We do all of it under one roof, with one producer who knows your run of show.',
     'That means the program cover, the step-and-repeat, the stage graphics and the recap film all share one look, and the person shooting your keynote already knows which sponsors need to be in frame.']),
+   ('Now booking 2027', [
+    'Music City Center\'s 2027 calendar is already filling up. Its public calendar lists dozens of conventions, trade shows, summits and galas for next year, including Safari Club International\'s annual convention (January 20 to 23), the Cattle Industry Convention and NCBA Trade Show (February 1 to 4), Dassault Systemes 3DEXPERIENCE World (February 14 to 17), ViVE (March 14 to 17), the ReMA Convention and Expo (April 12 to 15), the Bitcoin Conference (July 15 to 17), Shoptalk Fall (October 5 to 7), the Mortgage Bankers Association Annual Convention (October 17 to 20) and Content Marketing World (November 2 to 4). See the full list on our Music City Center events 2027 page.',
+    'Planners lock in venues years out, and media is often the last vendor booked. Book your photo, video, headshot lounge and design team now and we plan your coverage around your floor plan and run of show months ahead, with your dates held. Exhibitors and sponsors heading to a 2027 show can book booth coverage the same way.']),
    ('Built for a building this size', [
     'Music City Center is 2.1 million square feet at 201 Rep. John Lewis Way South, with 353,143 square feet of exhibit halls, the 57,500 square foot Karl F. Dean Grand Ballroom, the Davidson Ballroom and 60 meeting rooms. A general session upstairs, breakouts on two floors and an expo in Halls A through D can all run at the same hour. We staff to the schedule, not to a flat headcount: one shooter per room that matters, a floater for the hallways, and an editor cutting as the day goes.',
     'We plan around the building\'s rules before we arrive. Electrical, internet and rigging are exclusive services at Music City Center, so we order power drops, a hardwired line for any livestream and rigged banner points through your show management in advance, and we coordinate camera risers with your audio-visual company. Drones are not allowed indoors, so aerials stay outside. Nothing gets taped to a wall, nothing blocks an egress path, and the contractor paperwork your show requires is done before we badge in.']),
@@ -62,7 +68,9 @@ EVENTS = {
   feats=[('Event photography', 'Keynotes, panels, expo floor, networking, awards and the room itself.'), ('Video and highlight reels', 'A 60 to 90 second recap, sponsor cuts and full session recordings.'),
          ('Same-day social', 'Edited photos and vertical clips delivered during the event so your team can post live.'), ('Headshot lounge', 'A branded headshot booth for attendees, with images delivered to their inbox.'),
          ('Livestream', 'Multi-camera streams of keynotes and general sessions to YouTube, Vimeo, Zoom or your event app.'), ('Design and print', 'Programs, pamphlets, signage, sponsor boards, banners and badges.')],
-  faq=[('Do you work at Music City Center?', 'Yes. Leo Operations is based in Nashville and covers conventions, conferences, trade shows and galas at Music City Center and the downtown convention hotels. We coordinate with your show management and the venue\'s in-house providers before load-in.'),
+  faq=[('Are you booking Music City Center events for 2027?', 'Yes. We are booking 2027 conventions, conferences, trade shows and galas at Music City Center now, along with booth coverage for exhibitors and sponsors. Send your dates and we will hold them while we plan.'),
+       ('What events are at Music City Center in 2027?', 'Music City Center\'s public calendar already lists dozens of 2027 events, from the Safari Club International convention and the Cattle Industry Convention in January and February to Shoptalk Fall, the Mortgage Bankers Association Annual Convention and Content Marketing World in the fall. Our Music City Center events 2027 page lists them by month.'),
+       ('Do you work at Music City Center?', 'Yes. Leo Operations is based in Nashville and covers conventions, conferences, trade shows and galas at Music City Center and the downtown convention hotels. We coordinate with your show management and the venue\'s in-house providers before load-in.'),
        ('Can one company handle photography, video and design for our convention?', 'Yes. That is how we prefer to work. One producer runs photo, video, headshots, livestream and the design of your printed and digital materials, so everything matches and nothing falls between vendors.'),
        ('How fast do we get photos and video?', 'We can deliver edited selects the same day for social and press, with the full gallery and the highlight reel after the event. We agree on exact turnaround in writing when you book.'),
        ('Do you provide a headshot booth for attendees?', 'Yes. We set up a branded headshot lounge with lighting, a backdrop and a check-in flow, and attendees receive their edited headshot by email.'),
@@ -70,8 +78,33 @@ EVENTS = {
        ('Can you design and print our programs and signage?', 'Yes. Our design team builds programs, agendas, pamphlets, sponsor boards, directional signs and banners, and we either deliver print-ready files or manage printing and delivery to the venue.'),
        ('How much does a Music City Center photographer or videographer cost?', 'It depends on days, crew size, rooms covered and deliverables. Email or call with your dates, halls and session schedule and we will send a written quote within one business day.'),
        ('How do we book?', f'Email us or call {PHONE} with your event name, dates, the halls and ballrooms you have contracted and your expected attendance. We reply within one business day.')],
-  related=['nashville-conference-photographer', 'nashville-convention-videographer', 'nashville-trade-show-photographer', 'nashville-event-graphics-printing', 'headshot-photographer', 'video-production-company'],
+  related=['music-city-center-events-2027', 'nashville-conference-photographer', 'nashville-convention-videographer', 'nashville-trade-show-photographer', 'nashville-event-graphics-printing', 'headshot-photographer', 'video-production-company'],
   guides=['music-city-center-event-media', 'conference-media-checklist', 'trade-show-booth-content', 'conference-headshot-booth', 'event-photographer-cost'],
+ ),
+ 'music-city-center-events-2027': dict(
+  vid='v2-media', eyebrow='Music City Center events 2027', proof='films', cluster='mcc', cal=True,
+  h='Music City Center|events in 2027. <span class=grad>The full calendar.</span>',
+  title='Music City Center Events 2027: Nashville Conventions & Trade Shows',
+  desc='Every public 2027 convention, trade show, summit and gala on Music City Center\'s calendar, by month. Exhibiting or hosting? Leo Operations is booking 2027 photo and video.',
+  lead='Nashville\'s convention center has a full 2027 already. Here is every public event on Music City Center\'s 2027 calendar, by month, with links to the official event sites. If you are hosting, exhibiting or sponsoring one of them, Leo Operations is booking 2027 photography, video, headshot lounges and event design now.',
+  sections=[
+   ('What is on the 2027 calendar', [
+    'Big medical, tech, trade and association shows anchor the year: Safari Club International\'s annual convention (January 20 to 23), the Cattle Industry Convention and NCBA Trade Show (February 1 to 4), Dassault Systemes 3DEXPERIENCE World (February 14 to 17), ViVE (March 14 to 17), the ReMA Convention and Expo (April 12 to 15), the Bitcoin Conference (July 15 to 17), Shoptalk Fall (October 5 to 7), the Mortgage Bankers Association Annual Convention (October 17 to 20) and Content Marketing World (November 2 to 4). Galas and luncheons fill the ballrooms between them, from the Father Ryan Legacy Gala to the Jack and Jill of America Nashville Chapter Beautillion and the Moves and Grooves Gala.',
+    'Dates come from Music City Center\'s public calendar as of November 17, 2026. Events get added through the year and dates can move, so confirm with each event\'s official site before you book travel.']),
+   ('Exhibiting at a 2027 show?', [
+    'Book booth coverage before the show floor fills up. We photograph your booth clean before doors open and busy with buyers, film demos and short interviews, and deliver vertical clips during the show so your team can post while buyers are still on the floor. See our trade show photographer page for how we work a show floor.']),
+   ('Hosting or planning a 2027 event?', [
+    'Media is usually the last vendor booked and the first one people judge you by. Lock in your photo, video, livestream, headshot lounge and design team now and we build the plan around your floor plan, agenda and sponsor commitments. Electrical, internet and rigging are exclusive services at Music City Center, so we order what our crew needs through your show management well ahead of move-in.']),
+  ],
+  feats=[('Event photography', 'Keynotes, expo floors, awards and receptions.'), ('Highlight reels', 'Recaps that sell next year\'s show.'), ('Booth coverage', 'Photos, demos and interviews for exhibitors.'),
+         ('Headshot lounge', 'A branded headshot booth for attendees.'), ('Livestream', 'Keynotes and general sessions streamed live.'), ('Design and print', 'Programs, signage, sponsor boards and banners.')],
+  faq=[('What conventions are happening in Nashville in 2027?', 'Music City Center\'s 2027 calendar includes the Safari Club International Annual Convention, the Cattle Industry Convention and NCBA Trade Show, Dassault Systemes 3DEXPERIENCE World, ViVE, the ReMA Convention and Expo, the Bitcoin Conference, Shoptalk Fall, the Mortgage Bankers Association Annual Convention and Content Marketing World, among dozens of others listed on this page.'),
+       ('Where is Music City Center?', 'Music City Center is at 201 Rep. John Lewis Way South in downtown Nashville, Tennessee 37203. Contractor deliveries use 700 Korean Veterans Blvd.'),
+       ('Can I hire a photographer for my booth at a Music City Center trade show?', 'Yes. Exhibitors book us for booth photos, product shots, demo video and interviews. We register through the show as an exhibitor-appointed contractor when the show requires it.'),
+       ('Are you booking 2027 events now?', f'Yes. Email us or call {PHONE} with your event, your dates and what you need covered, and we will hold the dates.'),
+       ('Is this an official Music City Center calendar?', 'No. Leo Operations is an independent Nashville media company. This list is compiled from Music City Center\'s public calendar; check each event\'s official site for current dates.')],
+  related=['music-city-center-photographer', 'nashville-trade-show-photographer', 'nashville-convention-videographer', 'nashville-conference-photographer', 'nashville-event-graphics-printing'],
+  guides=['music-city-center-event-media', 'trade-show-booth-content', 'conference-headshot-booth', 'conference-media-checklist'],
  ),
  'nashville-conference-photographer': dict(
   vid='v2-photo', eyebrow='Conference photographer, Nashville', proof='photos', cluster='mcc',
@@ -91,13 +124,14 @@ EVENTS = {
   ],
   feats=[('Keynotes and general sessions', 'Stage, screens and audience reaction.'), ('Breakouts and panels', 'Every speaker, every room on your list.'), ('Expo floor', 'Exhibitors, booths and sponsor branding.'),
          ('Awards and galas', 'Presentations, honorees and the red carpet.'), ('Headshots', 'A branded lounge for attendees and speakers.'), ('Fast delivery', 'Same-day selects plus a full online gallery.')],
-  faq=[('How much does a conference photographer cost in Nashville?', 'It depends on hours, the number of rooms running at once and how fast you need images. Email your agenda and dates and we will quote it in writing within one business day.'),
+  faq=[('Are you booking 2027 events?', 'Yes. We are booking conference coverage for 2027 now, including events already on Music City Center\'s 2027 calendar. Send your dates and we will hold them.'),
+       ('How much does a conference photographer cost in Nashville?', 'It depends on hours, the number of rooms running at once and how fast you need images. Email your agenda and dates and we will quote it in writing within one business day.'),
        ('How many photographers do we need for a conference?', 'Plan one photographer for every room that must be covered at the same time, plus a floater on large expo floors. We build the crew from your agenda.'),
        ('Can we get photos during the event?', 'Yes. We deliver edited selects during the event for social media and press, then the full gallery afterward.'),
        ('Do you cover Music City Center and hotel conferences?', 'Yes. We cover conferences at Music City Center, the downtown convention hotels, Gaylord Opryland, universities and corporate campuses across Middle Tennessee.'),
        ('Can you also film the conference?', 'Yes. We shoot session recordings, a highlight reel and vertical clips with the same crew.'),
        ('How do we book?', f'Email us or call {PHONE} with your dates, venue and agenda.')],
-  related=['music-city-center-photographer', 'nashville-convention-videographer', 'nashville-trade-show-photographer', 'headshot-photographer', 'nashville-photographer'],
+  related=['music-city-center-events-2027', 'music-city-center-photographer', 'nashville-convention-videographer', 'nashville-trade-show-photographer', 'headshot-photographer', 'nashville-photographer'],
   guides=['conference-media-checklist', 'music-city-center-event-media', 'conference-headshot-booth', 'event-photographer-cost'],
  ),
  'nashville-convention-videographer': dict(
@@ -119,13 +153,14 @@ EVENTS = {
   ],
   feats=[('Highlight reels', '60 to 90 second recaps cut to music.'), ('Session recordings', 'Multi-camera keynotes and panels with board audio.'), ('Sponsor videos', 'Short cuts sponsors can post and renew on.'),
          ('Testimonials', 'Attendee and speaker soundbites captured on site.'), ('Livestream', 'Keynotes and general sessions streamed live.'), ('Vertical social', 'Clips for Instagram, TikTok and LinkedIn during the event.')],
-  faq=[('How much does it cost to hire a videographer for an event?', 'Event video is priced by crew size, hours on site and editing. A single camera for a half day and a multi-camera crew with a same-day edit are very different jobs. Send your agenda and we will quote it in writing within one business day.'),
+  faq=[('Are you booking 2027 events?', 'Yes. We are booking convention or conference coverage for 2027 now, including events already on Music City Center\'s 2027 calendar. Send your dates and we will hold them.'),
+       ('How much does it cost to hire a videographer for an event?', 'Event video is priced by crew size, hours on site and editing. A single camera for a half day and a multi-camera crew with a same-day edit are very different jobs. Send your agenda and we will quote it in writing within one business day.'),
        ('What is an event videographer?', 'An event videographer films live events such as conventions, conferences, galas and award shows, and edits the footage into recap films, session recordings and social clips.'),
        ('How long does a conference highlight video take?', 'We can deliver a same-day or next-day social cut during the event, with the full highlight reel after. We set the turnaround in writing when you book.'),
        ('Can you record every session?', 'Yes. We staff one camera operator per room that needs recording and capture audio from the house sound system.'),
        ('Do you livestream events?', 'Yes. We stream keynotes and general sessions to YouTube, Vimeo, Zoom or your event platform, with a dedicated hardwired line ordered through the venue.'),
        ('How do we book?', f'Email us or call {PHONE} with your dates, venue and agenda.')],
-  related=['music-city-center-photographer', 'nashville-conference-photographer', 'nashville-trade-show-photographer', 'nashville-videographer', 'video-production-company'],
+  related=['music-city-center-events-2027', 'music-city-center-photographer', 'nashville-conference-photographer', 'nashville-trade-show-photographer', 'nashville-videographer', 'video-production-company'],
   guides=['music-city-center-event-media', 'conference-media-checklist', 'trade-show-booth-content', 'videographer-cost'],
  ),
  'nashville-trade-show-photographer': dict(
@@ -146,13 +181,14 @@ EVENTS = {
   ],
   feats=[('Expo floor coverage', 'Traffic, booths and activations at peak hours.'), ('Booth photos', 'Clean and busy versions of your stand.'), ('Booth video', 'Interviews, demos and product B-roll.'),
          ('Sponsor recaps', 'Clips each sponsor can post and renew on.'), ('Awards and receptions', 'Stage, honorees and the room.'), ('Booth design', 'Graphics, one-sheets and pamphlets.')],
-  faq=[('Do you photograph trade shows at Music City Center?', 'Yes. We cover trade shows and expos at Music City Center and other Nashville venues, for organizers and for individual exhibitors.'),
+  faq=[('Are you booking 2027 events?', 'Yes. We are booking trade show coverage for 2027 now, including events already on Music City Center\'s 2027 calendar. Send your dates and we will hold them.'),
+       ('Do you photograph trade shows at Music City Center?', 'Yes. We cover trade shows and expos at Music City Center and other Nashville venues, for organizers and for individual exhibitors.'),
        ('Can we book you for just our booth?', 'Yes. Exhibitors book us for booth photos, product shots, interviews and social clips during the show.'),
        ('Do you follow exhibitor-appointed contractor rules?', 'Yes. We register through the show as an exhibitor-appointed contractor when required, follow the show\'s badge and move-in rules, and coordinate with the general contractor.'),
        ('Can you post content during the show?', 'Yes. We deliver edited photos and vertical clips during the show so your team can post while buyers are on the floor.'),
        ('What trade shows have you covered?', 'Recent work includes the 2026 Tennessee Wine & Spirits Retailers Association trade show in Nashville: the expo floor, exhibitor booths, awards ceremony and step-and-repeat.'),
        ('How do we book?', f'Email us or call {PHONE} with the show name, dates and your booth number or the areas you need covered.')],
-  related=['music-city-center-photographer', 'nashville-convention-videographer', 'nashville-conference-photographer', 'nashville-event-graphics-printing'],
+  related=['music-city-center-events-2027', 'music-city-center-photographer', 'nashville-convention-videographer', 'nashville-conference-photographer', 'nashville-event-graphics-printing'],
   guides=['trade-show-booth-content', 'music-city-center-event-media', 'conference-media-checklist'],
  ),
  'nashville-event-graphics-printing': dict(
@@ -295,7 +331,7 @@ EVENTS = {
   guides=['family-christmas-photos', 'best-christmas-photo-spots-nashville', 'nashville-engagement-photo-locations'],
  ),
 }
-EVENT_NAMES = {'music-city-center-photographer': 'Music City Center Photographer & Videographer', 'nashville-conference-photographer': 'Nashville Conference Photographer',
+EVENT_NAMES = {'music-city-center-photographer': 'Music City Center Photographer & Videographer', 'music-city-center-events-2027': 'Music City Center Events 2027', 'nashville-conference-photographer': 'Nashville Conference Photographer',
                'nashville-convention-videographer': 'Convention & Event Videographer', 'nashville-trade-show-photographer': 'Trade Show Photographer',
                'nashville-event-graphics-printing': 'Event Graphics & Printed Programs', 'nashville-wedding-videographer': 'Nashville Wedding Videographer',
                'nashville-proposal-photographer': 'Nashville Proposal Photographer', 'nashville-christmas-photos': 'Christmas Photos in Nashville',
@@ -333,6 +369,23 @@ def _ev_facts():
     return (f'<section class="sec wrap"><span class="eyebrow mono">The venue</span><h2 class="h-lg" style="margin:14px 0 24px">{split("Music City Center,|<span class=grad>by the numbers.</span>")}</h2>'
             f'<div class="gtable evfacts"><table><thead><tr><th>Space</th><th>Detail</th></tr></thead><tbody>{tr}</tbody></table></div><p class="mono" style="font-size:11px;color:var(--silver)">Sources: {src}. Leo Operations is an independent vendor and is not affiliated with Music City Center.</p></section>')
 
+def _ev_cal():
+    import datetime as _dt
+    by = {}
+    for a, b, n, l in MCC_2027:
+        by.setdefault(a[:7], []).append((a, b, n, l))
+    def fmt(a, b):
+        A = _dt.date.fromisoformat(a); s = A.strftime('%a, %b ') + str(A.day)
+        if not b: return s
+        B = _dt.date.fromisoformat(b)
+        return s + ' to ' + (B.strftime('%a, %b ') if B.month != A.month else B.strftime('%a ')) + str(B.day)
+    out = ''
+    for m in sorted(by):
+        rows = ''.join(f'<tr><td>{fmt(a, b)}</td><td>' + (f'<a href="{E(l)}" rel="noopener nofollow" target="_blank" style="color:var(--cyan)">{E(n)}</a>' if l else E(n)) + '</td></tr>' for a, b, n, l in by[m])
+        out += f'<h3 style="margin:26px 0 10px">{_dt.date.fromisoformat(m + "-01").strftime("%B %Y")}</h3><div class="gtable evfacts"><table><thead><tr><th>Dates</th><th>Event</th></tr></thead><tbody>{rows}</tbody></table></div>'
+    return (f'<section class="sec wrap" id="calendar"><span class="eyebrow mono">2027 calendar</span><h2 class="h-lg" style="margin:14px 0 10px">{split("Music City Center|<span class=grad>2027, month by month.</span>")}</h2>'
+            f'<p style="color:var(--silver)">{len(MCC_2027)} public events listed on <a href="https://nashvillemcc.com/calendar" rel="noopener" target="_blank" style="color:var(--cyan)">Music City Center&rsquo;s calendar</a> as of November 17, 2026. Private corporate meetings are left out. Dates can change; confirm with each event. Leo Operations is an independent vendor and is not affiliated with Music City Center.</p>{out}</section>')
+
 def event_page(slug):
     L = EVENTS[slug]
     prose = ''.join(f'<h2>{E(h)}</h2>' + ''.join(f'<p>{E(p)}</p>' for p in ps) for h, ps in L['sections'])
@@ -367,7 +420,7 @@ def event_page(slug):
         return f'''{EV_CSS}<section class="hero page-hero"><div class="hero-media">{hv}</div><div class="hero-inner"><span class="eyebrow mono">{E(L["eyebrow"])}</span><h1 class="h-xl">{split(L["h"])}</h1><p class="lead">{E(L["lead"])}</p><div class="hero-ctas">{mail("rod","leooperations.com","Get a quote <span class=\"arr\">&rarr;</span>","btn primary",subj)}{call}</div></div></section>
 {stats_html()}
 <section class="sec wrap" id="more"><div class="two-col"><div class="prose">{prose}</div><aside class="sticky-card"><h3>Let&rsquo;s talk.</h3><p>Send your date, venue and what you need. We reply within one business day.</p>{mail("rod","leooperations.com","Email Leo Operations <span class=\"arr\">&rarr;</span>","btn primary",subj)}<a class="evcall" href="tel:{PHONE_TEL}"><small>Or call</small>{PHONE}</a></aside></div></section>
-{_ev_facts() if L.get("place") else ""}
+{_ev_facts() if L.get("place") else ""}{_ev_cal() if L.get("cal") else ""}
 <section class="sec wrap"><span class="eyebrow mono">What we deliver</span><h2 class="h-lg" style="margin:14px 0 30px">{split("Everything|<span class=grad>you need.</span>")}</h2><div class="feat">{feats}</div></section>
 <section class="sec wrap"><div class="sec-head"><div><span class="eyebrow mono">Proof</span><h2 class="h-lg" style="margin-top:14px">{split(proof_h)}</h2></div></div>{_ev_proof(L["proof"], pre)}</section>
 <section class="sec wrap"><span class="eyebrow mono">FAQ</span><h2 class="h-lg" style="margin:14px 0 30px">Questions, answered.</h2><div class="faq">{faq}</div></section>
